@@ -66,6 +66,9 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.masthead-brand img.brand {
+  max-width: 200px;
+}
 
 .masthead-nav > li {
   display: inline-block;
@@ -115,6 +118,9 @@ body {
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+}
+.cover img.logo {
+  max-width: 300px;
 }
 
 
