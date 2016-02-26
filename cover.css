@@ -1,6 +1,11 @@
 /*
  * Globals
  */
+ 
+* {
+  z-index: 0;
+  background-color: transparent;
+}
 
 /* Links */
 a,
@@ -27,7 +32,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: transparent;
   /*background-size: fill;*/
   /*background: url(assets/images/11127868_10204055343534581_1468816034_o.jpg) no-repeat center center fixed;*/
 }
@@ -36,29 +41,17 @@ body {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
-
-/*markup for full page background*/
-body {
-  /* Location of the image */
-  background-image: url(assets/images/11127868_10204055343534581_1468816034_o.jpg);
-  
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: bottom center;
-  
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: #333;
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+.stretch {
+    width:100%;
+    height:100%;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -88,6 +81,9 @@ body {
 /*
  * Header
  */
+.masthead h3 {
+  z-index: 0;
+}
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -151,6 +147,9 @@ body {
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
+}
+.mastfoot p {
+  z-index: 0;
 }
 
 
