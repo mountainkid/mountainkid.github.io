@@ -118,9 +118,11 @@ body {
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+  
 }
-.cover img.logo {
-  max-width: 300px;
+.cover img.logo:hover {
+  transform: scale(1.03);
+  transition: background-color .5s, transform .5s ease-out;
 }
 
 
