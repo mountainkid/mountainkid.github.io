@@ -1,0 +1,23 @@
+# Site settings
+title: Mountain Kid
+description: >
+baseurl: ""
+url: https://mountainkid.net
+enforce_ssl: mountainkid.net
+
+#host: localhost
+#port: 4000
+#permalink: pretty
+#relative_permalinks: false
+
+# Build settings
+#highlighter: pygments
+#paginate: 1
+
+# Social Media
+#facebook_username:
+#twitter_username: jaronth
+#github_username:  jaronth
+
+# Themes Colors
+#theme: "#dddddd"
