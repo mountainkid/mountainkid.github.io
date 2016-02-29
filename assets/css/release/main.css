@@ -1,0 +1,1145 @@
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+
+/*
+CSSGrid is a Responsive CSS Grid designed to work on web and mobile devices. (www.cssgrid.co)
+Please don't steal. Support this grid and buy a license from: http://codecanyon.net/item/responsive-html5-css-grid/4928861
+
+The following styles are used on the navigation only. You do not need to use this CSS as part of the CSS Grid.
+
+-------------------------------------------------------------
+CSS Structure:
+
+01. Desktop Wrapper + Header
+02. Desktop Navigation
+03. Mobile Wrapper + Header
+04. Mobile Toggle Menu
+05. Mobile Navigation
+06. Retina Support (mobile toggle icon + desktop down arrow)
+-------------------------------------------------------------
+*/
+
+/* 01. Desktop Wrapper + Header -------------------------- */
+
+.wrapper {
+	padding-top:80px;
+	z-index:0;
+}
+.wrapper-push {
+	margin-right:0%;
+	z-index:0;
+}
+.fixed {
+	position:fixed!important;
+	width:100%;
+}
+.header {
+	width:100%;
+	margin:0px;
+	padding:0px;
+	min-height:49px;
+	padding-top:0px;
+	position:absolute;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dbdee2;
+	background-color:rgba(255,255,255,0.9); /* Change this to background-color:#fff; to make solid white */
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
+	z-index:1;
+}
+/* animate header on scrolling */
+.sticky {
+	width:100%;
+	padding:0px;
+	height:60px;
+	padding-top:10px;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+.sticky nav {
+	margin-right:10px;
+}
+.sticky ul.nav-buttons li {
+	border-right-width: 0px;
+}
+.stuck {
+	margin:0 auto;
+	width:100%;
+	height:auto;
+	position:fixed!important;
+	top:0;
+	left:0;
+	right:0;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
+	opacity: 1.0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dbdee2;
+}
+.stuck.header {
+	padding-top:0px;
+	min-height:50px;
+}
+.stuck .logo {
+	padding-left:10px;
+}
+.stuck nav {
+	margin-right:0px;
+}
+.stuck ul.nav-buttons li {
+	border-right-width: 1px;
+}
+/* End: animate header on scrolling */
+
+.logo {
+	float:left;
+	padding-left:20px;
+	font-size:20px;
+	line-height:50px;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+.logo span {
+	color:#f1844d;
+	font-weight:normal;
+}
+.logo a {
+}
+
+/* 02. Desktop Navigation -------------------------- */
+
+a {
+	color:#878c91;
+}
+a:hover {
+	color:#81868b;
+}
+a.selected {
+	color:#81868b;
+	background-color:#f8f8f9;
+}
+ul.nav-buttons li a.selected,
+ul.nav-buttons ul a.selected {
+	background-color:#f8f8f9;
+}
+.navclosed,
+.navclicked {
+	display:none;
+}
+nav {
+	z-index:2;
+	height:49px;
+	margin-right:0px;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+ul.nav-buttons {
+	margin:0px;
+	padding:0px;
+	z-index:2;
+	list-style:none;
+	float:right;
+}
+ul.nav-buttons li {
+	margin:0px;
+	padding:0px;
+	float:left;
+	position:relative;
+}
+ul.nav-buttons li a {
+	font-size:15px;
+	margin:0px;
+	padding-left:10px;
+	padding-right:10px;
+	line-height:51px;
+	display:block;
+	text-decoration:none;
+}
+ul.nav-buttons li a.buy {
+	background-color:#f1844d;
+	color:#fff;
+}
+ul.nav-buttons li a:hover {
+	font-size:15px;
+	text-decoration:none;
+	opacity: 1.0;
+}
+ul.nav-buttons li a.selected
+{
+	font-size:15px;
+	text-decoration:none;
+	opacity: 1.0;
+}
+ul.nav-buttons li a.dropdown
+{
+	font-size:15px;
+	padding-left:34px;
+	text-decoration:none;
+	opacity: 1.0;
+	background-image: url(../images/navgrey.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+ul.nav-buttons li a.dropdown:hover,
+ul.nav-buttons li:hover a.dropdown
+{
+	background-color:#ebeced;
+}
+
+/* Drop Down Menu */
+ul.nav-buttons ul {
+	list-style:none;
+	position:absolute;
+	padding:0px;
+	padding-top:1px;
+	width:auto;
+	height:auto;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+ul.nav-buttons ul li {
+	float:none;
+	height:50px;
+	border:0px;
+}
+ul.nav-buttons ul a {
+	width:190px;
+	display:block;
+	margin:0px;
+	padding-left:10px;
+	background-color:#ebeced;
+}
+ul.nav-buttons ul a:hover {
+	background-color:#f8f8f9;
+}
+ul.nav-buttons li:hover ul {
+	left:0; /* Display the dropdown on hover */
+}
+
+/* 03. Mobile Wrapper + Header -------------------------- */
+
+/* Browsers from 0 up to 767 iPhone Portrait + Landscape (iPad Portrait width is 768) */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+.wrapper {
+/*	right:0px;
+	padding-top:80px;
+	width:100%;
+	*/
+/*	transition-property: right; Timers for sliding in the wrapper, when closing the navigation 
+	-moz-transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function:ease;
+	-o-transition:.8s;
+	-ms-transition:.8s;
+	-moz-transition:.8s;
+	-webkit-transition:.8s;
+	transition:.8s; */
+	-o-transition:.8s;
+	-ms-transition:.8s;
+	-moz-transition:.8s;
+	-webkit-transition:.8s;
+	transition:.8s;
+	width:100%;
+	position:relative;
+	opacity:1;
+	z-index:0;
+}
+.wrapper-push {
+/*	right:270px;
+	position:absolute;
+	transition-property: right;  Timers for sliding out the wrapper, when opening the navigation 
+	-moz-transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function:ease;
+	 /* Change this to 1 to keep the wrapper 100% visibility */
+/*	 */
+	-o-transition:.8s;
+	-ms-transition:.8s;
+	-moz-transition:.8s;
+	-webkit-transition:.8s;
+	transition:.8s;
+	width:100%;
+	position:relative;
+	opacity:0.3;
+	z-index:0;
+}
+.header {
+	min-height:50px;
+	z-index:2;
+}
+.sticky {
+	border-top-width: 0px;
+}
+.stuck {
+	height:50px;
+}
+.logo {
+	font-size:16px;
+	padding-top:1px;
+}
+.sticky nav,
+.stuck nav {
+	margin-top:0px;
+}
+
+/* 04. Mobile Toggle Menu -------------------------- */
+
+.navclosed {
+	z-index:3;
+	color:#333;
+	margin:0px;
+	padding:0px;
+	display:block;
+	background-image: url(../images/nav.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width:50px;
+	height:50px;
+	float:right;
+	transition-property: right; /* Timers for returning the X (close button) back to it's original position */
+	-moz-transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function:ease;
+}
+.navclosed.slide + nav { /* Nav Closed */
+	display:block;
+	overflow: hidden;
+	padding-top:0px;
+	max-height:0;
+	padding-bottom:0;
+	margin-bottom:0;
+	height:auto;
+	position:relative;
+	-moz-transition-duration: 0.8s;  /* Timers for closing the navigation panel */
+	-webkit-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function: ease;
+	z-index:4;
+}
+.navclosed a {
+	color:transparent;
+	margin:0px;
+	padding:0px;
+	width:50px;
+	height:50px;
+	display:block;
+}
+.navclicked.slide + nav { /* Nav Clicked */
+	margin-top:0px;
+	height:auto;
+	position:relative;
+	-moz-transition-duration: 0.8s; /* Timers for sliding out the navigation panel */
+	-webkit-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function: ease;
+	max-height:999px;
+	overflow: hidden;
+	z-index:4;
+}
+.header.fixed .navclicked.slide + nav, /* Nav Clicked for Fixed and Sticky. Make sure scroll bars happen */
+.header.sticky .navclicked.slide + nav,
+.header.stuck .navclicked.slide + nav {
+	margin-top:51px;
+	height:90%!important;
+	height: calc(100% - 50px)!important;
+	position:fixed;
+	overflow:auto;
+}
+.header.fixed .navclosed.slide + nav, /* Nav Clicked for Fixed and Sticky. Make sure scroll bars happen */
+.header.sticky .navclosed.slide + nav,
+.header.stuck .navclosed.slide + nav {
+	margin-top:51px;
+	height:90%!important;
+	height: calc(100% - 50px)!important;
+	position:fixed;
+	overflow:auto;
+}
+.navclicked {
+	color:#fff;
+	margin:0px;
+	padding:0px;
+	background-image: url(../images/nav.png);
+	background-repeat: no-repeat;
+	background-position: right -50px;
+	z-index:3;
+	width:100%;
+	height:50px;
+	float:right;
+	position:absolute;
+}
+.navclicked a {
+	color:transparent;
+	margin:0px;
+	padding:0px;
+	width:50px;
+	height:300px;
+	display:block;
+}
+
+/* 05. Mobile Navigation -------------------------- */
+
+nav {
+	display:none;
+	z-index:2;
+	width:100%;
+	height:auto;
+	background-color:#ebeced;
+	position:absolute;
+}
+ul.nav-buttons {
+	float:none;
+	width:100%;
+	height:auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+	padding:0px;
+	position:static;
+}
+ul.nav-buttons li {
+	width:100%;
+	height:auto;
+	margin-right:0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccced1;
+	float:left;
+}
+ul.nav-buttons li a {
+	display:block;
+	width:100%;
+}
+
+/* Drop Down Menu */
+ul.nav-buttons li a.dropdown {
+	padding-left:36px !important;
+	background-color:#ebeced;
+	background-image: url(../images/navgrey.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	background-size:40px;
+	-moz-background-size:40px;
+}
+ul.nav-buttons ul {
+	position:relative;
+	left:0px;
+}
+ul.nav-buttons ul li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+}
+
+}
+
+/* 06. Retina Support (mobile toggle icon + desktop down arrow) -------------------------- */
+
+/* Change images to higher res versions, if screen resolution is high, such as Retina on Apple devices. */
+@media
+screen and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (-moz-min-device-pixel-ratio: 1.5),
+screen and (min-device-pixel-ratio: 1.5) { 
+
+.navclosed {
+	background-image: url(../images/nav2x.png);
+	background-repeat: no-repeat;
+	background-position: right top;	
+	background-size:50px;
+	-moz-background-size:50px;
+}
+.navclicked {
+	background-image: url(../images/nav2x.png);
+	background-repeat: no-repeat;
+	background-position: right -50px;
+	background-size:50px;
+	-moz-background-size:50px;
+}
+ul.nav-buttons li a.dropdown,
+ul.nav-buttons li a.dropdown:hover,
+ul.nav-buttons li:hover a.dropdown
+{
+	background-image: url(../images/navgrey2x.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size:40px;
+	-moz-background-size:40px;
+}
+
+}
+
+/* Global Properties */
+
+* {
+  background-color: transparent;
+}
+
+html,
+body {
+  background: url(https://dl.dropboxusercontent.com/u/90320376/background.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: #336699;
+  padding-top: 70px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.masthead .inner section {
+  height: 50vh; /* For at least Firefox */
+  min-height: 50vh;
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote,
+span,
+li,
+a {
+  font-family: 'Oswald', sans-serif;
+  color: #eee;
+}
+
+/*a:hover {
+  text-decoration: none;
+}*/
+
+/*a.active {
+  text-decoration: underline;
+}*/
+
+hr {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.panel {
+  padding: 15PX;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #eee;
+}
+
+.thumbnail li, .thumbnail h3, .thumbnail p {
+  color: #333;
+}
+
+p.post-meta {
+  text-transform: uppercase;
+}
+
+/*li {
+  list-style: none;
+}*/
+
+.full-width {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#home,
+#Biography,
+#Discography,
+#Contact {
+  padding-top: 100px;
+  min-width: 100%;
+  min-height: 750px;
+}
+/* Navigation */
+
+.brand {
+  font-family: 'Sketch Block W03 Bold', sans-serif;
+  font-size: 25px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  transform: scale(1.25);
+  transition: background-color .5s, transform .5s ease-out;
+}
+
+.navbar-collapse li a:hover {
+  transform: scale(1.25);
+  transition: background-color .5s, transform .5s ease-out;
+}
+/* Home Section */
+
+#home {}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.jumbotron h1 {
+  font-family: 'Sketch Block W03 Bold', sans-serif;
+  color: #1e1e1e;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: auto;
+  height: auto;
+  width: 5rem;
+  width: 50px;
+}
+
+svg {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #eee;
+  fill: #eee;
+}
+
+svg:hover {
+  color: #ddd;
+  fill: #ddd;
+  transform: scale(1.25);
+  transition: background-color .5s, transform .5s ease-out;
+}
+
+@media (max-width: 768px) {
+  .social-icons a {
+    display: inline-block;
+    height: auto;
+    height: auto;
+    width: 3rem;
+    width: 30px;
+  }
+
+  svg {
+    display: inline-block;
+    height: 75%;
+    width: 75%;
+    color: #eee;
+    fill: #eee;
+  }
+  h3.masthead-brand {
+    margin: 10px 50px 10px 50px;
+  }
+}
+/* Biography Section */
+
+#Biography {
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  background-size: cover;
+}
+/* Discography Section */
+
+#Discography {
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  background-size: cover;
+}
+
+ul.side-bar li {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Contact Section */
+
+#Contact {
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  background-size: cover;
+}
+
+/*
+ * Header
+ */
+h3.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3.masthead-brand,
+.masthead-nav > li {
+  display: inline-block;
+}
+h3.masthead-brand,
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+h3.masthead-brand a > img,
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+h3.masthead-brand a:hover > img,
+h3.masthead-brand a:focus > img,
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+h3.masthead-brand a > img.active,
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*mobile optimizations*/
+nav > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.well {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.masthead-nav > li.mobile {
+  display: inline-block;
+}
+.masthead-nav > li.mobile + li {
+  margin-left: 5px;
+}
+.masthead-nav > li.mobile > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li.mobile > a:hover,
+.masthead-nav > li.mobile > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > li.mobile.active > a,
+.masthead-nav > li.mobile.active > a:hover,
+.masthead-nav > li.mobile.active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+  }
+  .masthead-nav {
+  }
+  .masthead-social {
+    float: right;
+  }
+}
+
+/* Footer */
+
+.section .site-wrapper {
+  min-height: 100vh;
+}
+/* Change the style of every button */
+.snipcart-overwrite #snipcart-main-container a.snipcart-btn {
+    background-color: #333;
+    color: #fff;
+    font-family: 'CopperplateGothicW01-Bo1119449', Verdana, sans-serif;
+}
+
+/* Add a hover style the buttons */
+.snipcart-overwrite #snipcart-main-container a.snipcart-btn:hover {
+    color: #111;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+/* Change the style of the primary buttons */
+.snipcart-overwrite #snipcart-main-container a.snipcart-next,
+.snipcart-overwrite #snipcart-main-container a.snipcart-finalize,
+.snipcart-overwrite #snipcart-main-container a.snipcart-mainaction {
+    background: #333;
+    border: none;
+    text-shadow: none;
+}
+
+/* Change the default color of links */
+.snipcart-overwrite #snipcart-main-container a {
+    color: #333;
+}
+
+/* Remove the footer with "Powered by Snipcart" */
+.snipcart-overwrite #snipcart-footer {
+    display: none;
+}
+
+/* Change the title color and add a logo*/
+.snipcart-overwrite #snipcart-header #snipcart-title {
+    color: #333;
+    font-family: 'CopperplateGothicW01-Bo1119449', Verdana, sans-serif;
+    background: url('../../images/bootFaceCart.png') no-repeat 0 center;
+    padding-left: 60px;
+}
+
+/* Change the color of the header, add a blue border so we can see the "x" button,
+    add a shadow for effect and make sure this shadow is over every element */
+.snipcart-overwrite #snipcart-header {
+    background: #eee;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    border-top: 30px solid #333;
+    padding-top: 10px;
+    position: relative;
+    z-index: 200;
+}
+
+/* Make sure the "x" button is always in the header top border */
+.snipcart-overwrite #snipcart-close {
+    top: 10px;
+}
+
+/* Change the style of the total box */
+.snipcart-overwrite #snipcart-header #snipcart-header-total {
+    padding: 1px;
+    background: #fff;
+    border-color: #bbb;
+}
+.snipcart-overwrite #snipcart-header #snipcart-total {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    opacity: 0.5;
+}
+.snipcart-overwrite #snipcart-header #snipcart-total span {
+    color: #333;
+}
+
+/* Change the appearance of the cart bottom part with the action buttons so that
+     it is similar to the header*/
+.snipcart-overwrite #snipcart-main-container div#snipcart-actions,
+.snipcart-overwrite #snipcart-main-container div.snipcart-additional-option {
+    background: #eee;
+    -webkit-box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:    0px -2px 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:         0px -2px 2px 0px rgba(0, 0, 0, 0.3);
+    border-bottom: 8px solid #333;
+}
+
+/* Push the middle part away from the header and the bottom part */
+.snipcart-overwrite #snipcart-main-content #snipcart-sub-content {
+    padding-top: 20px;
+}
+.snipcart-overwrite #snipcart-main-content .snipcart-step-container {
+    padding-bottom: 20px;
+}
+
+.snipcart-overwrite #snipcart-main-container #snipcart-cartitems-continue-top {
+    top: 65px;
+}
+
+/* Change the font-family of every element using brandon grotesque */
+.snipcart-overwrite #snipcart-main-container span.snipcart-unit-price, 
+.snipcart-overwrite #snipcart-main-container span.snipcart-total-price,
+.snipcart-overwrite #snipcart-main-container table.snipcart-list span.snipcart-product-name,
+.snipcart-overwrite #snipcart-main-container table.snipcart-list span.snipcart-shipping-method-name,
+.snipcart-overwrite  #snipcart-main-container table.snipcart-list span.snipcart-shipping-method-price,
+.snipcart-overwrite #snipcart-main-container table.snipcart-list span.snipcart-confirm-item-quantity,
+.snipcart-overwrite #snipcart-main-container table.snipcart-list span.snipcart-confirm-item-price,
+.snipcart-overwrite #snipcart-main-container table.snipcart-list span.snipcart-confirm-item-total-price,
+.snipcart-overwrite #snipcart-main-container label,
+.snipcart-overwrite ul#snipcart-steps li span.snipcart-step-text,
+.snipcart-overwrite #snipcart-main-container table.snipcart-list th,
+.snipcart-overwrite #snipcart-main-content .snipcart-column span.snipcart-title,
+.snipcart-overwrite table#snipcart-confirm-prices tr td span,
+.snipcart-overwrite #snipcart-main-container .snipcart-full-width-text span.snipcart-title,
+.snipcart-overwrite #snipcart-main-container .snipcart-full-width-text,
+.snipcart-overwrite #snipcart-step-content-emptycart .snipcart-full-width-text p,
+.snipcart-overwrite #snipcart-blocked .snipcart-full-width-text p,
+.snipcart-overwrite #snipcart-header #snipcart-total span,
+.snipcart-overwrite #snipcart-header #snipcart-title  {
+    font-family: 'CopperplateGothicW01-Bo1119449', Verdana, sans-serif;
+}
+
+/* Change the appearance of the step tabs */
+.snipcart-overwrite ul#snipcart-steps li {
+    background: #eee;
+    opacity: 0.5;
+}
+.snipcart-overwrite ul#snipcart-steps li.active {
+    background-color: #fff;
+    opacity: 1;
+}
+.snipcart-overwrite ul#snipcart-steps {
+    background: transparent;
+}
+
+/* Change the background color of the promocodes section*/
+.snipcart-overwrite #snipcart-promocodes {
+    background: #fbfbfb;
+}
+
+/* Confirmation error textarea  */
+.snipcart-overwrite #snipcart-main-container .snipcart-comments-box textarea {
+    resize: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    background: #fbfbfb;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+/* Empty cart message*/
+.snipcart-overwrite #snipcart-step-content-emptycart .snipcart-full-width-text p {
+    color: #333;
+    padding-bottom: 20px;
+}
+
+/* Sign in user bar */
+.snipcart-overwrite #snipcart-main-content #snipcart-current-user #snipcart-user-infos {
+    background: #82999d;
+}
+
+/* We need the !important here because there is one in the default stylesheet */
+.snipcart-overwrite #snipcart-main-content #snipcart-current-user .snipcart-welcome {
+    color: #ddd !important;
+}
+
+/* Change the step icons to number */
+.snipcart-overwrite ul#snipcart-steps li span.snipcart-step-number {
+    font-family: 'CopperplateGothicW01-Bo1119449', Verdana, sans-serif;
+}

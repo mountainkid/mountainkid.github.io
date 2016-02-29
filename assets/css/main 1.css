@@ -1,0 +1,27 @@
+.inner {
+	max-width:600px;
+	margin:auto;
+	font-size:140%;
+	line-height:1.6;
+	padding:10px
+}
+.page {
+	width:80%;
+	margin:auto;
+}
+.page .inner p { padding:2em 0 0 }
+.media {
+	width:100%;
+	padding-top:56.2%;
+	position:relative;
+	background:red
+}
+.media img {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+}

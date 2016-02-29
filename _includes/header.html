@@ -1,0 +1,33 @@
+<!-- Header -->
+<header class="header sticky">
+<div class="logo brand-icon"><a href="{{ site.baseurl }}/" title="responsive website css grid"><span>{% include mk-logo.html %}</span></a></div>
+
+<!-- Nav Toggle Button -->
+<div class="navclosed slide">
+	<a href="#" title="Menu"></a>
+</div>
+<!-- Nav Toggle Button End -->
+
+<!-- Nav -->
+<nav>
+	 <ul class="nav masthead-nav nav-buttons">
+          
+        {% assign pages_list = site.pages | sort:"weight"  %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if node.layout == "page" %}
+              {% assign active_key = node.title %}
+          <li class="{% if page.title == node.title %}active{% endif %}"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+          <!--<li class="{% if page.title ==  "Blog" %}active{% endif %}"><a href="{{ "/blog/" | prepend: site.baseurl }}">Blog</a></li>-->
+          <!--<li><a href="https://{{ site.bandcamp_username }}.bandcamp.com/" target="_blank">E-Commerce</a></li>-->
+
+      </ul>
+      
+</nav>
+<!-- Nav End -->
+
+</header>
+<!-- Header End -->

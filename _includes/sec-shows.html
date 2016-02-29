@@ -1,0 +1,79 @@
+<div class="container-fluid">
+<div>
+  <h3>show dates ::</h3>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#upcoming" aria-controls="upcoming" role="tab" data-toggle="tab">Upcoming</a></li>
+    <li role="presentation"><a href="#archive" aria-controls="archive" role="tab" data-toggle="tab">Archive</a></li>
+<!--     <li role="presentation">
+        <a href="#collapseDates" aria-haspopup="true" aria-expanded="false" data-toggle="collapse" aria-controls="collapseDates">Past <span class="caret"></span></a>
+ -->    <!-- Dropdown -->
+
+
+    </li>    
+</ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="upcoming">
+    {% for post in site.data.shows %} {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %} {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %} {% if post.active == true %}
+                <br />
+                <p><strong>{{ post.date }} {{ post.day }} "{{ post.name }}"</strong></p>
+                <p>DATE :: {{ post.date | date: "%B %-d, %Y" }}<br />VENUE :: {{ post.venue }}</p>
+                <p>{{ post.description }}</p>
+                <br />
+    {% endif %} {% endfor %}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="archive">
+    <ul class="side-bar">
+        <li><a href="#2016" aria-controls="2016" data-toggle="tab">2016</a></li>
+        <li><a href="#2015" aria-controls="2015" data-toggle="tab">2015</a></li>
+        <li><a href="#2014" aria-controls="2014" data-toggle="tab">2014</a></li>
+    </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="2016">
+    <ul class="side-bar">
+        <li><a href="#2016" aria-controls="2016" data-toggle="tab">2016</a></li>
+        <li><a href="#2015" aria-controls="2015" data-toggle="tab">2015</a></li>
+        <li><a href="#2014" aria-controls="2014" data-toggle="tab">2014</a></li>
+    </ul>
+    {% for post in site.data.shows %} {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %} {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %} {% if this_year == "2016" %} {% if post.active == false %}
+                <br />
+                <p><strong>{{ post.date }} {{ post.day }} "{{ post.name }}"</strong></p>
+                <p>DATE :: {{ post.date | date: "%B %-d, %Y" }}<br />VENUE :: {{ post.venue }}</p>
+                <p>{{ post.description }}</p>
+                <br />
+        {% endif %} {% endif %} {% endfor %}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="2015">
+    <ul class="side-bar">
+        <li><a href="#2016" aria-controls="2016" data-toggle="tab">2016</a></li>
+        <li><a href="#2015" aria-controls="2015" data-toggle="tab">2015</a></li>
+        <li><a href="#2014" aria-controls="2014" data-toggle="tab">2014</a></li>
+    </ul>
+    {% for post in site.data.shows %} {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %} {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %} {% if this_year == "2015" %} {% if post.active == false %}
+                <br />
+                <p><strong>{{ post.date }} {{ post.day }} "{{ post.name }}"</strong></p>
+                <p>DATE :: {{ post.date | date: "%B %-d, %Y" }}<br />VENUE :: {{ post.venue }}</p>
+                <p>{{ post.description }}</p>
+                <br />
+        {% endif %} {% endif %} {% endfor %}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="2014">
+    <ul class="side-bar">
+        <li><a href="#2016" aria-controls="2016" data-toggle="tab">2016</a></li>
+        <li><a href="#2015" aria-controls="2015" data-toggle="tab">2015</a></li>
+        <li><a href="#2014" aria-controls="2014" data-toggle="tab">2014</a></li>
+    </ul>
+    {% for post in site.data.shows %} {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %} {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %} {% if this_year == "2014" %} {% if post.active == false %}
+                <br />
+                <p><strong>{{ post.date }} {{ post.day }} "{{ post.name }}"</strong></p>
+                <p>DATE :: {{ post.date | date: "%B %-d, %Y" }}<br />VENUE :: {{ post.venue }}</p>
+                <p>{{ post.description }}</p>
+                <br />
+        {% endif %} {% endif %} {% endfor %}
+    </div>
+  </div>
+
+</div>
+</div>	
