@@ -1,9 +1,11 @@
-<footer>
-
-  <div class="container-fluid">
-
-	<p class="small text-center">Copyright &copy; 2016 Mountain Kid :: All Rights Reserved
-
+<div class='footer {{ include.trim_class }}'>
+  <div class='text-center bottom links'>
+    {% for link in site.data.links %}
+      <a href='{{ link.url }}' title='{{ link.title }}'><i class='fa {{ link.fontawesome }}'></i><span class='hidden-xs'> {{ link.title }}</span></a>
+      {% if forloop.rindex0 > 0 %}
+        |
+      {% endif %}
+    {% endfor %}
   </div>
-
-</footer>
+  {% include background-attribution.html %}
+</div>

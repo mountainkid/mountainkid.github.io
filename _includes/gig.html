@@ -1,0 +1,9 @@
+{% capture date_string %}{{ include.date | date: "%-d %B" }}{% endcapture %}
+{% if include.with_day == true %}
+  {% capture date_string %}{{ include.date | date: "%A %-d %B" }}{% endcapture %}
+{% endif %}
+{% if include.with_year == true %}
+  {% capture date_string %}{{ include.date | date: "%-d %B %Y" }}{% endcapture %}
+{% endif %}
+<dt class='title'>{{ date_string }}:</dt>
+<dd><a href='{{ include.url }}'>{{ include.title }}</a></dd>

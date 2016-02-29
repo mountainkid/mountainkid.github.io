@@ -1,0 +1,29 @@
+.soundcloud, .flickr, .band-member, .vimeo {
+  .dl-horizontal {
+    font-size: 0.7em;
+    padding: 5px;
+
+    dt {
+      width: 50%;
+      margin-right: 5px;
+      color: $rfm-orange;
+      white-space: normal;
+    }
+
+    dd {
+      margin-left: 5px;
+    }
+  }
+
+  span.plain {
+    color: black;
+  }
+}
+
+.attribution {
+  font-size: 0.5em;
+  background: $rfm-orange;
+  a {
+    color: $rfm-green;
+  }
+}

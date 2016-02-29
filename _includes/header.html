@@ -1,33 +1,21 @@
-<!-- Header -->
-<header class="header sticky">
-<div class="logo brand-icon"><a href="{{ site.baseurl }}/" title="responsive website css grid"><span>{% include mk-logo.html %}</span></a></div>
+<div class='header {{ include.trim_class }}'>
+  <div class='container header-container'>
+    <div class='row'>
+      <div class='col-md-4 col-md-push-8'>
+        {% include navigation.html %}
+      </div>
 
-<!-- Nav Toggle Button -->
-<div class="navclosed slide">
-	<a href="#" title="Menu"></a>
+      <div class='col-md-8 col-md-pull-4 hidden-sm'>
+        <a href='/'>
+          <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='logo'/>
+        </a>
+      </div>
+
+      <div class='col-md-8 col-md-pull-4 visible-sm'>
+        <a href='/'>
+          <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='little-logo'/>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Nav Toggle Button End -->
-
-<!-- Nav -->
-<nav>
-	 <ul class="nav masthead-nav nav-buttons">
-          
-        {% assign pages_list = site.pages | sort:"weight"  %}
-        {% for node in pages_list %}
-          {% if node.title != null %}
-            {% if node.layout == "page" %}
-              {% assign active_key = node.title %}
-          <li class="{% if page.title == node.title %}active{% endif %}"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-          <!--<li class="{% if page.title ==  "Blog" %}active{% endif %}"><a href="{{ "/blog/" | prepend: site.baseurl }}">Blog</a></li>-->
-          <!--<li><a href="https://{{ site.bandcamp_username }}.bandcamp.com/" target="_blank">E-Commerce</a></li>-->
-
-      </ul>
-      
-</nav>
-<!-- Nav End -->
-
-</header>
-<!-- Header End -->

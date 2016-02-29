@@ -1,48 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
     {% include boilerplate.html %}
-    
+    {% include js-boilerplate.html %}
+
     <link rel='icon' type='image/png' href='/assets/favicon.ico' />
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.css" type="text/css" />-->
-    
-<!-- Nav Top, Custom for less than 768 -->
-<!--<link href="assets/css/grid/css/nav-top.css" rel="stylesheet" type="text/css" media="all" />-->
-<!-- Defaultassets/css/grid/ styles, like padding, colours and sizes -->
-<!--<link href="assets/css/grid/css/default.css" rel="stylesheet" type="text/css" media="all" />-->
-<!-- iPad Laassets/css/grid/ndscape + -->
-<!--<link href="assets/css/grid/css/fixed-1024.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 1024px)">-->
-<!-- iPad Poassets/css/grid/rtrait -->
-<!--<link href="assets/css/grid/css/fixed-768.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 1023px)">-->
-<!-- iPhone assets/css/grid/Landscape -->
-<!--<link href="assets/css/grid/css/fixed-480.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 480px) and (max-width: 767px)">-->
-<!-- iPhone assets/css/grid/Portrait -->
-<!--<link href="assets/css/grid/css/fixed-320.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 0px) and (max-width: 479px)">-->
-<!-- Percentassets/css/grid/age Columns -->
-<!--<link href="assets/css/grid/css/percent.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 0px)">-->
-<!-- Stack Cassets/css/grid/olumns. Change min-width to when you would like stacked columns to start and max-width to when you would like it to end -->
-<!--<link href="assets/css/grid/css/stack2.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 480px) and (max-width: 767px)">-->
-<!--<link href="assets/css/grid/css/stack1.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 0px) and (max-width: 479px)">-->
-<!--<link href="assets/css/grid/css/stack1-2.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 0px) and (max-width: 767px)">-->
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel='stylesheet' href='{{ site.baseurl }}/assets/css/release/css/main.min.css' type='text/css' />
-    <style>{{ page.extra_styles }}</style>    
-    
+    <link rel='stylesheet' href='/assets/application.css' type='text/css' />
+    <style>{{ page.extra_styles }}</style>
     {% assign title = page.title %}
-    {% if page.subtitle %}
-      {% capture title %}{{ page.title}} » {{ page.subtitle }}{% endcapture %}
+    {% if page.pretitle %}
+      {% capture title %}{{ page.pretitle}} » {{ page.title }}{% endcapture %}
     {% endif %}
     <title>{{ title }}</title>
 
     {% include open-graph.html %}
-    
-    {% include ie-boilerplate.html %}
-    {% include js-boilerplate.html %}
+
   </head>
+
   <body>
-    
-    {{ content }}
-    
+    {% unless page.no_header %}
+      {% include header.html trim_class = page.trim_class %}
+    {% endunless %}
+    {% if page.with_nav %}
+      {% include navigation.html %}
+    {% endif %}
+    <div class='container'>
+      {% unless page.no_title %}
+        {% assign title = page.title %}
+        {% if page.extra_title %}
+          {% capture title %}{{ page.extra_title }} {{ title }}{% endcapture %}
+        {% endif %}
+        <h1 class='main-title'>{{ title }}</h1>
+      {% endunless %}
+      {{ content }}
+      {% if page.license_these %}
+        {% include license_note.html licensed = page.license_these version = page.license_version %}
+      {% endif %}
+    </div>
+    {% include footer.html trim_class = page.trim_class %}
   </body>
 </html>

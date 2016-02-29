@@ -1,0 +1,121 @@
+---
+---
+
+@import 'fonts';
+@import 'bootstrap-custom';
+@import 'bootstrap';
+@import 'footer';
+@import 'header';
+@import 'blog';
+@import 'nav';
+@import 'pictures';
+@import 'gigs';
+@import 'credits';
+@import 'throbbing-gristle';
+
+body {
+  color: black;
+}
+
+a {
+  color: $rfm-green;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+.main-title {
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  color: $rfm-orange;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.plain {
+  background-image: none;
+  opacity: 0.7;
+}
+
+dt.heading {
+  text-transform: uppercase;
+}
+
+.splash {
+  width: 80%;
+  height: auto;
+}
+
+p.splash{
+  color: white;
+  text-transform: none;
+}
+
+.license-note {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0px;
+}
+
+.subtitle {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.book-us, .call-for-feedback {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  font-weight: lighter;
+}
+
+.reviews {
+  dt {
+    font-size: 1.5em;
+  }
+
+  dd {
+    font-size: 1.0em;
+    text-align: right;
+  }
+}
+
+.merch {
+  img {
+    max-width: 100%;
+    background-color: $gray-lighter;
+  }
+
+  font-size: 1em;
+
+  ul {
+    font-size: 1.5em;
+  }
+}
+
+.certificate {
+  padding-bottom: 10px;
+  opacity: 0.8;
+}
+
+// cargo-culted straight outta bootstrap
+.dl-horizontal {
+  @media (min-width: 0) {
+    dt {
+      float: left;
+      width: ($dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      @include text-overflow();
+    }
+    dd {
+      margin-left: $dl-horizontal-offset;
+    }
+  }
+}

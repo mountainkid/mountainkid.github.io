@@ -1,48 +1,21 @@
 ---
 layout: default
-title: Mountain Kid
-subtitle: Home
+title: Raw Funk Maharishi
+extra_styles: "body { background-image: url('/assets/images/backgrounds/background.jpg'); background-position: center }"
+no_header: true
+no_title: true
+trim_class: plain
+with_nav: true
 ---
-<div class="wrapper" id="default">
- 
-<div class="jumbotron">
-  <div class="container-fluid">
-    <div class="site-wrapper-inner">
-      <img class="img-responsive center-block" alt="Mountain Kid" src="assets/images/logos/compass.png" />
-      {% include social-icons.html %}
-    </div>
-  </div>
-</div>
-    
-{% include header.html %}            
 
-<div class="section" id="main">
-    
-    <div class="site-wrapper-inner">
-    	<div class="container">
-      <div class="row">
-        <div class="col-md-7">
-		{% include sec-news.html %}
-		    </div>
-		    <div class="col-md-5">
-		{% include sec-shows.html %}
-		<br />
-		<br />
-		<h3>recent media ::</h3>
-		    </div>
-		  </div>
-		  </div>
-		</div>
-</div>
+{% include next-gig-flash.html %}
 
-<div class="section" id="second">
-    
-      <div class="site-wrapper-inner">
+<img src='/assets/images/logos/wide/banner.png'
+     alt='Raw Funk Maharish'
+     class='splash center-block hidden-xs hidden-sm'/>
 
-        <div class="container">
-		{% include footer.html %}
-		</div>
-	  </div>
-</div>
+<img src='/assets/images/logos/stacked/logo.png'
+     alt='Raw Funk Maharish'
+     class='splash center-block visible-xs-inline-block visible-sm-inline-block'/>
 
-</div>
+{% include straplines.html %}

@@ -1,0 +1,26 @@
+- title: The Band
+  path:  /the-band/
+
+- title: Sounds
+  path:  /sounds/
+
+- title: Pictures
+  path:  /pictures/
+
+- title: Videos
+  path:  /videos/
+
+- title: Gigs
+  path:  /gigs/
+
+- title: Bookings
+  path:  /book-the-band/
+
+- title: Reviews
+  path:  /feedback/
+
+- title: Merchandise
+  path:  /merchandise/
+
+- title: Licensing
+  path:  /licensing/
