@@ -1,19 +1,37 @@
-<nav class='navbar navbar-default' role='navigation'>
+<!-- Header -->
+<!--<header class="header sticky">-->
+<!--<div class="logo brand-icon"><a href="{{ site.baseurl }}/" title="responsive website css grid"><span>{% include mk-logo.html %}</span></a></div>-->
+
+<!-- Nav Toggle Button -->
+<!--<div class="navclosed slide">-->
+<!--	<a href="#" title="Menu"></a>-->
+<!--</div>-->
+<!-- Nav Toggle Button End -->
+
+<!-- Nav -->
+<nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
   {% include mobile-nav.html %}
   <div class='collapse navbar-collapse' id='navbar-collapse'>
+    
+    <div id="navbar-highlight">
 
-    <!-- mobile -->
-    <ul class='nav hidden-md hidden-lg mobile' role='tablist'>
-      {% for item in site.data.navigation %}
-        {% include nav-item.html title = item.title path = item.path current = page.url %}
-      {% endfor %}
-    </ul>
+      <!-- mobile -->
+      <ul class='nav hidden-md hidden-lg mobile' role='tablist'>
+        {% for item in site.data.navigation %}
+          {% include nav-item.html title = item.title path = item.path current = page.url %}
+        {% endfor %}
+      </ul>
 
-    <!-- desktop -->
-    <ul class='nav nav-stacked nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
-      {% for item in site.data.navigation %}
-        {% include nav-item.html title = item.title path = item.path current = page.url %}
-      {% endfor %}
-    </ul>
+      <!-- desktop -->
+      <ul class='nav nav-stacked nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
+        {% for item in site.data.navigation %}
+          {% include nav-item.html title = item.title path = item.path current = page.url %}
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </nav>
+<!-- Nav End -->
+
+<!--</header>-->
+<!-- Header End -->
