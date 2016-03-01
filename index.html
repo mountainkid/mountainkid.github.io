@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mountain Kid
-extra_styles: "body { background: url('/assets/images/backgrounds/mountain-render-bg.jpg') no-repeat center center fixed; background-size: cover; } #home, #the-band, #sounds, #pictures, #videos, #gigs, #book-the-band, #feedback, #merchandise, #licensing { min-height: 100vh; }"
+extra_styles: "body { background: url('/assets/images/backgrounds/mountain-render-bg.jpg') no-repeat center center fixed; background-size: cover; } #home, #the-band, #sounds, #pictures, #videos, #gigs, #book-the-band, #feedback, #merchandise, #licensing { margin-top: 50vh; } .panel, .thumbnail { background-color: rgba(0,0,0,.6); }"
 no_header: true
 no_title: true
 trim_class: plain
@@ -25,36 +25,52 @@ with_nav: true
 <div class="container">
 
 <div id="the-band">
-  <h1 class='main-title'>The Band</h1>
-  {% include the-band.html %}
+  <div class="panel">
+    <h1 class='main-title'>The Band</h1>
+    {% include the-band.html %}
+  </div>
 </div>
 <div id="sounds">
-  <h1 class='main-title'>Sounds</h1>
-  {% include sounds.html %}
+  <div class="panel">
+    <h1 class='main-title'>Sounds</h1>
+    {% include sounds.html %}
+  </div>
 </div>
 <div id="pictures">
-  <h1 class='main-title'>Pictures</h1>
-  {% include pictures.html %}
+  <div class="panel">
+    <h1 class='main-title'>Pictures</h1>
+    {% include pictures.html %}
+  </div>
 </div>
 <div id="videos">
-  <h1 class='main-title'>Videos</h1>
-  {% include videos.html %}
+  <div class="panel">
+    <h1 class='main-title'>Videos</h1>
+    {% include videos.html %}
+  </div>
 </div>
 <div id="gigs">
-  <h1 class='main-title'>Gigs</h1>
-  {% include gigs.html %}
+  <div class="panel">
+    <h1 class='main-title'>Gigs</h1>
+    {% include gigs.html %}
+  </div>
 </div>
 <div id="book-the-band">
-  <h1 class='main-title'>Bookings</h1>
-  {% include book-the-band.html %}
+  <div class="panel">
+    <h1 class='main-title'>Bookings</h1>
+    {% include book-the-band.html %}
+  </div>
 </div>
 <div id="feedback">
-  <h1 class='main-title'>Reviews</h1>
-  {% include feedback.html %}
+  <div class="panel">
+    <h1 class='main-title'>Reviews</h1>
+    {% include feedback.html %}
+  </div>
 </div>
 <div id="merchandise">
-  <h1 class='main-title'>Merchandise</h1>
-  {% include merchandise.html %}
+  <div class="panel">
+    <h1 class='main-title'>Merchandise</h1>
+    {% include merchandise.html %}
+  </div>
 </div>
 
 </div>

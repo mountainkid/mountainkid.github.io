@@ -5458,8 +5458,8 @@ code {
 
 .next-gig {
   position: absolute;
-  bottom: 12%;
-  right: 1%;
+  top: 50px;
+  left: 1%;
   font-size: 1em;
   background-color: #86cabc;
   color: #fd6400;

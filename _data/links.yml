@@ -1,34 +1,26 @@
 - title:       Twitter
-  url:         https://twitter.com/uncookedfunk
+  url:         https://twitter.com/mountainkidband
   fontawesome: fa-twitter
 
 - title:       Facebook
-  url:         https://facebook.com/rawfunkmaharishi
+  url:         https://facebook.com/noahsarkitech
   fontawesome: fa-facebook-square
 
 - title:       Soundcloud
-  url:         https://soundcloud.com/rawfunkmaharishi
+  url:         https://soundcloud.com/mountain-kid
   fontawesome: fa-soundcloud
 
-- title:       Vimeo
-  url:         https://vimeo.com/rawfunkmaharishi
-  fontawesome: fa-vimeo-square
+- title:       Instagram
+  url:         https://soundcloud.com/mountain-kid
+  fontawesome: fa-instagram
 
-- title:       Flickr
-  url:         http://flickr.com/photos/rawfunkmaharishi/
-  fontawesome: fa-flickr
-
+- title:       YouTube
+  url:         https://youtube.com/mountain-kid
+  fontawesome: fa-youtube
+  
 - title:       Github
-  url:         https://github.com/rawfunkmaharishi/
+  url:         https://github.com/mountainkid/
   fontawesome: fa-github
-
-- title:       Snapchat
-  url:         /snapchat
-  fontawesome: fa-comment
-
-- title:       Data API
-  url:         http://data.rawfunkmaharishi.uk/
-  fontawesome: fa-database
 
 - title:       Developer blog
   url:         /blog/
