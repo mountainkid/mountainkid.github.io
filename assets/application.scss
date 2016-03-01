@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
 .main-title {
   font-weight: bolder;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: $rfm-orange;
 }
 
@@ -52,7 +52,7 @@ dt.heading {
 }
 
 p.splash{
-  color: white;
+  color: #333;
   text-transform: none;
 }
 

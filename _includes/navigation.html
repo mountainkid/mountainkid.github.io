@@ -1,5 +1,6 @@
+<div class='sticky'>
 <!-- Nav -->
-<nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<nav class='navbar navbar-default' role='navigation'>
   {% include mobile-nav.html %}
   <div class='collapse navbar-collapse' id='navbar-collapse'>
     
@@ -13,7 +14,7 @@
       </ul>
 
       <!-- desktop -->
-      <ul class='nav nav-stacked nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
+      <ul class='nav nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
         {% for item in site.data.navigation %}
           {% include nav-item.html title = item.title path = item.path current = page.url %}
         {% endfor %}
@@ -22,3 +23,4 @@
   </div>
 </nav>
 <!-- Nav End -->
+</div>
