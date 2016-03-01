@@ -2,9 +2,51 @@
 <!--title: Pictures-->
 <!------->
 <a name="pictures"></a>
-<div class='row'>
-  {% for picture in site.data.flickr %}
-    {% include picture.html cols = 4 class = 'flickr' url = picture.photo_url title = picture.title photo_page = picture.photo_page photographer = picture.photographer license = picture.license license_url = picture.license_url %}
-    {% cycle '', '', "</div><div class='row'>" %}
-  {% endfor %}
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div class="containder-fluid">
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
+<div id="links">
+  
+  <div class='row'>
+    {% for picture in site.data.flickr %}
+      {% include picture.html cols = 4 class = 'flickr' url = picture.photo_url title = picture.title photo_page = picture.photo_page photographer = picture.photographer license = picture.license license_url = picture.license_url %}
+      {% cycle '', '', "</div><div class='row'>" %}
+    {% endfor %}
+  </div>
+</div>
+
+
+
+

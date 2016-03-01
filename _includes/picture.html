@@ -1,7 +1,7 @@
 <div class='col-md-{{ include.cols}}'>
   <section class='thumbnail {{ include.class }}'>
     {% if include.photo_page %}
-      <a href='{{ include.photo_page }}'>
+      <a href='{{ include.url }}' data-gallery>
     {% endif %}
 
     <img src='{{ include.url }}' alt='{{ include.title }}'/>
