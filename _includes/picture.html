@@ -1,12 +1,12 @@
 <div class='col-md-{{ include.cols}}'>
   <section class='thumbnail {{ include.class }}'>
-    {% if include.photo_page %}
-      <a href='{{ include.url }}' data-gallery>
+    {% if include.full_image %}
+      <a href='{{ include.full_image }}' data-gallery>
     {% endif %}
 
-    <img src='{{ include.url }}' alt='{{ include.title }}'/>
+    <img src='{{ include.thumbnail }}' alt='{{ include.title }}'/>
 
-    {% if include.photo_page %}
+    {% if include.full_image %}
       </a>
     {% endif %}
 

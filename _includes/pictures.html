@@ -40,8 +40,8 @@
 <div id="links">
   
   <div class='row'>
-    {% for picture in site.data.flickr %}
-      {% include picture.html cols = 4 class = 'flickr' url = picture.photo_url title = picture.title photo_page = picture.photo_page photographer = picture.photographer license = picture.license license_url = picture.license_url %}
+    {% for picture in site.data.pics %}
+      {% include picture.html cols = 4 class = 'flickr' thumbnail = picture.thumbnail title = picture.title full_image = picture.full_image photographer = picture.photographer license = picture.license license_url = picture.license_url %}
       {% cycle '', '', "</div><div class='row'>" %}
     {% endfor %}
   </div>
