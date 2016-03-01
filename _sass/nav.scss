@@ -27,7 +27,19 @@
   }
 }
 
+.navbar .navbar-brand img {
+    width: 50px;
+}
+
 /* mobile version */
+.navbar-default,
+.navbar-default .logo {
+  position:fixed!important;
+  top:0;
+  left:0;
+  right:0;
+}
+
 .navbar-default .navbar-toggle {
   border-color: $gray;
 }
@@ -45,7 +57,7 @@
 .sticky {
 	width:100%;
 	padding:0px;
-	height:60px;
+	height:100%;
 	padding-top:10px;
 	-o-transition:.3s;
 	-ms-transition:.3s;
@@ -55,6 +67,7 @@
 }
 .sticky nav {
 	margin-right:10px;
+	margin-bottom:0;
 }
 .sticky ul.nav-buttons li {
 	border-right-width: 0px;
@@ -80,6 +93,8 @@
 .stuck.header {
 	padding-top:0px;
 	min-height:50px;
+	background-color:rgba(155,205,155,.4);
+	z-index:999;
 }
 .stuck .logo {
 	padding-left:10px;

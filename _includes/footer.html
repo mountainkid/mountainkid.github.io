@@ -2,7 +2,7 @@
 <div class='footer {{ include.trim_class }} container'>
   <div class='text-center bottom links panel'>
     {% for link in site.data.links %}
-      <a href='{{ link.url }}' title='{{ link.title }}'><i class='fa {{ link.fontawesome }}'></i><span class='hidden-xs'> {{ link.title }}</span></a>
+      <a href='{{ link.url }}' title='{{ link.title }}' target='_blank'><i class='fa {{ link.fontawesome }}'></i><span class='hidden-xs'> {{ link.title }}</span></a>
       {% if forloop.rindex0 > 0 %}
         |
       {% endif %}

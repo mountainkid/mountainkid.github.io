@@ -16,11 +16,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 bandcamp_username:  mountainkid
 facebook_username:  noahsarkitech
 github_username:  jaronth
-instagram_username:  ""
+instagram_username:  mountainkidmusic
 soundcloud_username:  mountain-kid
 tumblr_username:  mountainkidband
 twitter_username:  mountainkidband
-youtube_username:  ""
+youtube_username:  ''
 
 # Build settings
 markdown: kramdown

@@ -11,17 +11,13 @@
   fontawesome: fa-soundcloud
 
 - title:       Instagram
-  url:         https://soundcloud.com/mountain-kid
+  url:         https://instagram.com/mountainkidmusic
   fontawesome: fa-instagram
 
-- title:       YouTube
-  url:         https://youtube.com/mountain-kid
-  fontawesome: fa-youtube
+#- title:       YouTube
+#  url:         https://youtube.com/mountainkidmusic
+#  fontawesome: fa-youtube
   
 - title:       Github
   url:         https://github.com/mountainkid/
   fontawesome: fa-github
-
-- title:       Developer blog
-  url:         /blog/
-  fontawesome: fa-code

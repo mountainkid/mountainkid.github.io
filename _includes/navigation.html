@@ -1,4 +1,4 @@
-<div class='sticky'>
+<div class='header sticky'>
 <!-- Nav -->
 <nav class='navbar navbar-default' role='navigation'>
   {% include mobile-nav.html %}
@@ -7,14 +7,14 @@
     <div id="navbar-highlight">
 
       <!-- mobile -->
-      <ul class='nav hidden-md hidden-lg mobile' role='tablist'>
+      <ul class='nav nav-buttons hidden-md hidden-lg mobile' role='tablist'>
         {% for item in site.data.navigation %}
           {% include nav-item.html title = item.title path = item.path current = page.url %}
         {% endfor %}
       </ul>
 
       <!-- desktop -->
-      <ul class='nav nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
+      <ul class='nav nav-buttons nav-tabs pull-right hidden-xs hidden-sm' role='tablist'>
         {% for item in site.data.navigation %}
           {% include nav-item.html title = item.title path = item.path current = page.url %}
         {% endfor %}
