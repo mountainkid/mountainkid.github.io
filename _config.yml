@@ -1,3 +1,32 @@
+# Site settings
+title: Mountain Kid
+email: mountainkidmusic@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Mountain Kid is a blend of two powerhouse local bands from Fort Worth. 
+  Our group is comprised of 
+  Lewis Wall, lead singer and guitarist of Head of Savage, 
+  Ethan Stone, Drummer from Head of Savage, 
+  Rob Hine, Guitarist From We'rewolves, and 
+  Addison White, Lead singer/guitar from The Royal Savages. 
+  Our goal is to bring you new, creative, and inspiring music to fill your lives with.
+baseurl: "" # the subpath of your site, e.g. /blog
+#url:  # the base hostname & protocol for your site
+
+# Social Media settings
+bandcamp_username:  mountainkid
+facebook_username:  noahsarkitech
+github_username:  jaronth
+instagram_username:  ""
+soundcloud_username:  mountain-kid
+tumblr_username:  mountainkidband
+twitter_username:  mountainkidband
+youtube_username:  ""
+
+# Build settings
+markdown: kramdown
+#gems: [jekyll-paginate]
+#paginate: 2
+#paginate_path: "/blog/page:num/"
 defaults:
   -
     scope:
@@ -28,3 +57,5 @@ defaults:
 permalink: pretty
 future: true
 exclude: [vendor]
+
+

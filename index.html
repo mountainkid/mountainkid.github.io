@@ -1,52 +1,60 @@
 ---
 layout: default
-title: Raw Funk Maharishi
-extra_styles: "body { background: url('/assets/images/backgrounds/mountain-bg.gif') no-repeat center center fixed; background-size: cover }"
+title: Mountain Kid
+extra_styles: "body { background: url('/assets/images/backgrounds/mountain-render-bg.jpg') no-repeat center center fixed; background-size: cover; } #home, #the-band, #sounds, #pictures, #videos, #gigs, #book-the-band, #feedback, #merchandise, #licensing { min-height: 100vh; }"
 no_header: true
 no_title: true
 trim_class: plain
 with_nav: true
 ---
 
-{% include next-gig-flash.html %}
-
 <div id="home">
+  {% include next-gig-flash.html %}
 
-  <img src='/assets/images/logos/wide/banner.png'
-       alt='Raw Funk Maharish'
+  <img src='/assets/images/logos/stacked/logo.png'
+       alt='Mountain Kid'
        class='splash center-block hidden-xs hidden-sm'/>
 
   <img src='/assets/images/logos/stacked/logo.png'
-       alt='Raw Funk Maharish'
+       alt='Mountain Kid'
        class='splash center-block visible-xs-inline-block visible-sm-inline-block'/>
 
   {% include straplines.html %}
 </div>
 
+<div class="container">
+
 <div id="the-band">
+  <h1 class='main-title'>The Band</h1>
   {% include the-band.html %}
 </div>
 <div id="sounds">
+  <h1 class='main-title'>Sounds</h1>
   {% include sounds.html %}
 </div>
 <div id="pictures">
+  <h1 class='main-title'>Pictures</h1>
   {% include pictures.html %}
 </div>
 <div id="videos">
+  <h1 class='main-title'>Videos</h1>
   {% include videos.html %}
 </div>
 <div id="gigs">
+  <h1 class='main-title'>Gigs</h1>
   {% include gigs.html %}
 </div>
 <div id="book-the-band">
+  <h1 class='main-title'>Bookings</h1>
   {% include book-the-band.html %}
 </div>
 <div id="feedback">
+  <h1 class='main-title'>Reviews</h1>
   {% include feedback.html %}
 </div>
 <div id="merchandise">
+  <h1 class='main-title'>Merchandise</h1>
   {% include merchandise.html %}
 </div>
-<div id="licensing">
-  {% include licensing.html %}
+
 </div>
