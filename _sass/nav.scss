@@ -1,3 +1,16 @@
+.header {
+    width:100%;
+	padding:0px;
+	height: auto;
+	padding-top:10px;
+	opacity: 1.0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dbdee2;
+	padding-top:0px;
+	background-color:rgba(155,205,155,.4);
+	z-index:999;
+}
 .navbar {
    background-color: transparent;
    background: transparent;
@@ -28,7 +41,7 @@
 }
 
 .navbar .navbar-brand img {
-    width: 100px;
+    width: 200px;
 }
 
 /* mobile version */

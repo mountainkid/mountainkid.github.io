@@ -1,6 +1,6 @@
-<div class='header sticky'>
+<div class='header' id='{{ include.trim_id }}'>
 <!-- Nav -->
-<nav class='navbar navbar-default' role='navigation'>
+<nav class='navbar navbar-default nav-fixed-to-top' role='navigation'>
   {% include mobile-nav.html %}
   <div class='collapse navbar-collapse' id='navbar-collapse'>
     
@@ -9,14 +9,14 @@
       <!-- mobile -->
       <ul class='nav nav-buttons hidden-md hidden-lg mobile' role='tablist'>
         {% for item in site.data.navigation %}
-          {% include nav-item.html title = item.title path = item.path current = page.url %}
+          {% include nav-item.html title = item.title path = item.path current = page.url trim_class = page.trim_class %}
         {% endfor %}
       </ul>
 
       <!-- desktop -->
-      <ul class='nav nav-buttons nav-tabs pull-right hidden-xs hidden-sm' role='tablist'>
+      <ul class='nav nav-buttons nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
         {% for item in site.data.navigation %}
-          {% include nav-item.html title = item.title path = item.path current = page.url %}
+          {% include nav-item.html title = item.title path = item.path current = page.url trim_class = page.trim_class %}
         {% endfor %}
       </ul>
     </div>

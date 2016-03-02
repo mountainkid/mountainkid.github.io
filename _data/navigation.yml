@@ -1,6 +1,10 @@
 - title: The Band
   path:  "#the-band"
 
+- title: Gigs
+  path:  "#gigs"
+  active: gig
+  
 - title: Sounds
   path:  "#sounds"
 
@@ -9,9 +13,6 @@
 
 - title: Videos
   path:  "#videos"
-
-- title: Gigs
-  path:  "#gigs"
 
 - title: Bookings
   path:  "#book-the-band"

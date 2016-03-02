@@ -1,11 +1,5 @@
 $footer-height: 50px;
 
-html {
-  position: relative;
-  min-height: 100%;
-  text-transform: none;
-}
-
 body {
   /* Margin bottom by footer height */
   margin-bottom: $footer-height;
@@ -18,7 +12,7 @@ body {
   text-transform: lowercase;
 
   margin-top: $padding-large-vertical;
-  background-image: url('/assets/images/backgrounds/background.jpg');
+  background-color: transparent;
 
   opacity: 1;
   color: white;
@@ -27,7 +21,7 @@ body {
   padding: $padding-large-vertical $padding-large-horizontal;
 
   a {
-    color: #333;
+    color: #eee;
   }
 
   a:hover {

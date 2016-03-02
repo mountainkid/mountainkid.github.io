@@ -5,30 +5,31 @@
     right: 0;
 }
 
+.inner-wrapper {
+    padding-top: 25vh;
+}
+
 .panel {
-    margin-top: 25vh;
+    background-color: rgba(155,205,155,0.4);
 }
 
-.panel,
 .thumbnail {
-    background-color: rgba(55,55,55,.1);
+    background-color: transparent;
 }
 
-#home,
-#the-band,
-#sounds,
-#pictures,
-#videos,
-#gigs,
-#book-the-band,
-#feedback,
-#merchandise,
-#licensing,
-#gig-layout {
-    min-height: 100vh;
-}
+// #home .inner-wrapper,
+// #the-band .inner-wrapper,
+// #sounds .inner-wrapper,
+// #pictures .inner-wrapper,
+// #videos .inner-wrapper,
+// #book-the-band .inner-wrapper,
+// #feedback .inner-wrapper,
+// #merchandise .inner-wrapper,
+// #licensing .inner-wrapper,
+// #gig-layout .inner-wrapper
 
 #home {
+    min-height: 100vh;
     background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o.jpg') no-repeat bottom center;
     background-size: cover;
     background-color: $mk-back;

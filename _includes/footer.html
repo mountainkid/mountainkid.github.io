@@ -1,12 +1,14 @@
 <nav class="navbar-fixed-bottom">
-<div class='footer {{ include.trim_class }} container'>
+<div class='footer container'>
   <div class='text-center bottom links'>
-    {% for link in site.data.links %}
-      <a href='{{ link.url }}' title='{{ link.title }}' class='lead' target='_blank'><i class='fa {{ link.fontawesome }}'></i><span class='hidden-xs'> {{ link.title }}</span></a>
-      {% if forloop.rindex0 > 0 %}
-        |
-      {% endif %}
-    {% endfor %}
+    <p class='lead panel'>
+      {% for link in site.data.links %}
+        <a href='{{ link.url }}' title='{{ link.title }}' target='_blank'><i class='fa {{ link.fontawesome }}'></i><span class='hidden-xs'> {{ link.title }}</span></a>
+        {% if forloop.rindex0 > 0 %}
+          |
+        {% endif %}
+      {% endfor %}
+    </p>
   </div>
   {% include background-attribution.html %}
 </div>

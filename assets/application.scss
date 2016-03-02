@@ -17,6 +17,7 @@
 body {
   color: #eee;
   position: relative;
+  background-color: $mk-back;
 }
 
 a {
@@ -53,6 +54,10 @@ textarea {
 input,
 textarea {
     color: #222;
+}
+
+.lead {
+  color: #eee;
 }
 
 .plain {

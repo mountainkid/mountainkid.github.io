@@ -6,9 +6,7 @@
   {% for member in site.data.band %}
 
     {% capture url %}/assets/images/the-band/{{ member.image }}{% endcapture %}
-    {% include picture.html cols = 4 class = 'band-member' url = url title = member.name photographer = member.photographer license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
+    {% include picture.html cols = 3 class = 'band-member' thumbnail = url title = member.name instrument = member.instrument license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
 
   {% endfor %}
 </div>
-
-{% include book-us.html %}

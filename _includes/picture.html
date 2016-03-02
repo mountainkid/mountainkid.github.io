@@ -20,6 +20,12 @@
           <a href='https://twitter.com/{{ include.twitter }}' alt='{{ include.title }} on Twitter' title='{{ include.title }} on Twitter'>@{{ member.twitter }}</a>
         </h3>
       {% endif %}
+      
+      {% if include.instrument %}
+        <h3 class='twitter lead'>
+          {{ member.instrument }}
+        </h3>
+      {% endif %}
 
       <dl class='dl-horizontal'>
         {% if include.photographer %}
@@ -36,7 +42,7 @@
           </dd>
         {% endif %}
         <dt>
-          License:
+          <!--License:-->
         </dt>
         <dd>
           <a href='{{ include.license_url }}'>{{ site.data.licenses[include.license].short-name }}</a>
