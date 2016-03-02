@@ -6,6 +6,7 @@
 @import 'bootstrap';
 @import 'footer';
 @import 'header';
+@import 'background';
 @import 'blog';
 @import 'nav';
 @import 'pictures';
@@ -14,7 +15,7 @@
 @import 'throbbing-gristle';
 
 body {
-  color: black;
+  color: #eee;
   position: relative;
 }
 

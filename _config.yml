@@ -27,6 +27,10 @@ markdown: kramdown
 #gems: [jekyll-paginate]
 #paginate: 2
 #paginate_path: "/blog/page:num/"
+
+sass:
+    style: compressed
+    
 defaults:
   -
     scope:
@@ -57,5 +61,6 @@ defaults:
 permalink: pretty
 future: true
 exclude: [vendor]
+
 
 

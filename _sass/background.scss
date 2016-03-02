@@ -1,0 +1,99 @@
+.wrapper { 
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
+
+.panel {
+    margin-top: 25vh;
+}
+
+.panel,
+.thumbnail {
+    background-color: rgba(55,55,55,.1);
+}
+
+#home,
+#the-band,
+#sounds,
+#pictures,
+#videos,
+#gigs,
+#book-the-band,
+#feedback,
+#merchandise,
+#licensing,
+#gig-layout {
+    min-height: 100vh;
+}
+
+#home {
+    background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o.jpg') no-repeat bottom center;
+    background-size: cover;
+    background-color: $mk-back;
+    background-blend-mode: multiply;
+    box-shadow: 0 0 100px 100px $mk-back inset;
+}
+#the-band {
+    background-color: $mk-back;
+    background-size: cover;
+}
+#gigs {
+    background: url('images/backgrounds/background.jpg') no-repeat bottom center;
+    background-size: cover;
+    background-color: $mk-back;
+    background-blend-mode: multiply;
+    box-shadow: 0 0 100px 100px $mk-back inset;
+}
+#sounds {
+    background-color: $mk-back;
+    background-size: cover;
+}
+#pictures {
+    background: url('images/backgrounds/mountain-bg.gif') no-repeat top center;
+    background-size: cover;
+    background-color: $mk-back;
+    background-blend-mode: multiply;
+    box-shadow: 0 0 100px 100px $mk-back inset;
+}
+#videos {
+    background-color: $mk-back;
+    background-size: cover;
+}
+#book-the-band {
+    background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: $mk-back;
+    background-blend-mode: multiply;
+    box-shadow: 0 0 100px 100px $mk-back inset;
+}
+#feedback {
+    background-color: $mk-back;
+    background-size: cover;
+}
+#merchandise {
+    background: url('/assets/images/backgrounds/background.jpg') no-repeat center center;
+    background-size: cover;
+}
+#licensing {
+    background: url('/assets/images/backgrounds/background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#home img {
+    padding-top: 25vh;
+}
+
+p#strapline {
+    padding-top: 250px;
+    color: #eee;
+}
+
+p#strapline .alpha-album {
+    color: $rfm-orange;
+}
+
+p#strapline .omega-album {
+    color: $rfm-green;
+}
