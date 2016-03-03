@@ -15,15 +15,15 @@
   {% endfor %}
 </div>
 
-<div class='row'>
-  {% for sound in site.data.soundcloud limit:4 offset:2 %}
+<!--<div class='row'>-->
+  {% for sound in site.data.soundcloud limit:0 offset:2 %}
     {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
   {% endfor %}
-</div>
+<!--</div>-->
 
 
-<div class='row'>
-  {% for sound in site.data.soundcloud limit:4 offset:6 %}
+<!--<div class='row'>-->
+  {% for sound in site.data.soundcloud limit:0 offset:6 %}
     {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
   {% endfor %}
-</div>
+<!--</div>-->

@@ -5,14 +5,14 @@
   path:  "#gigs"
   active: gig
   
-- title: Sounds
-  path:  "#sounds"
+# - title: Sounds
+#   path:  "#sounds"
 
-- title: Pictures
-  path:  "#pictures"
+- title: Media
+  path:  "#media"
 
-- title: Videos
-  path:  "#videos"
+# - title: Videos
+#   path:  "#videos"
 
 - title: Bookings
   path:  "#book-the-band"

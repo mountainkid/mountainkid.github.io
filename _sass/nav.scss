@@ -1,18 +1,5 @@
-.header {
-    width:100%;
-	padding:0px;
-	height: auto;
-	padding-top:10px;
-	opacity: 1.0;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #dbdee2;
-	padding-top:0px;
-	background-color:rgba(155,205,155,.4);
-	z-index:999;
-}
 .navbar {
-   background-color: transparent;
+   background-color: $mk-nav;
    background: transparent;
    border: none;
    padding-top: 2px;
@@ -45,6 +32,9 @@
 }
 
 /* mobile version */
+.navbar-default .navbar-collapse {
+	background-color: $mk-nav;
+}
 .navbar-default .navbar-toggle {
   border-color: $gray;
 }
@@ -98,7 +88,7 @@
 .stuck.header {
 	padding-top:0px;
 	min-height:50px;
-	background-color:rgba(155,205,155,.4);
+	background-color:$mk-nav;
 	z-index:999;
 }
 .stuck .logo {

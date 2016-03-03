@@ -14,7 +14,7 @@
       </ul>
 
       <!-- desktop -->
-      <ul class='nav nav-buttons nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
+      <ul class='nav nav-buttons nav-pills navbar-right hidden-xs hidden-sm' role='tablist'>
         {% for item in site.data.navigation %}
           {% include nav-item.html title = item.title path = item.path current = page.url trim_class = page.trim_class %}
         {% endfor %}
