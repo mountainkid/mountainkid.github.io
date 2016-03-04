@@ -3,11 +3,6 @@
   id: 197898873
   url: https://soundcloud.com/mountain-kid/sets/the-realist-alpha
   image: alpha.jpg
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false 
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -15,11 +10,7 @@
   id: 197906998
   url: https://soundcloud.com/mountain-kid/sets/the-realist-omega
   image: omega.jpg
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false 
+  #location
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -27,11 +18,7 @@
   id: 247911606
   url: https://soundcloud.com/mountain-kid/spectacle
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false 
+  #location
   date: '2016-02-19'
   #license: 
   #license_url: 
@@ -39,11 +26,7 @@
   id: 247911532
   url: https://soundcloud.com/mountain-kid/the-tick
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false Rogue Studios
+  #locationRogue Studios
   #engineer: Alessio
   date: '2016-02-19'
   #: Attribution-NonCommercial-ShareAlike
@@ -52,11 +35,7 @@
   id: 247911526
   url: https://soundcloud.com/mountain-kid/the-realist
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false Rogue Studios
+  #locationRogue Studios
   #engineer: Alessio
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
@@ -65,11 +44,7 @@
   id: 247911520
   url: https://soundcloud.com/mountain-kid/cross-this-body
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false 
+  #location
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -77,11 +52,7 @@
   id: 247911506
   url: https://soundcloud.com/mountain-kid/no-ghost
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false Rooz Studios
+  #locationRooz Studios
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -89,11 +60,7 @@
   id: 247907374
   url: https://soundcloud.com/mountain-kid/monotony
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false 
+  #location
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -101,11 +68,7 @@
   id: 247907370
   url: https://soundcloud.com/mountain-kid/feet-first
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false Rogue Studios
+  #locationRogue Studios
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -113,11 +76,7 @@
   id: 247907366
   url: https://soundcloud.com/mountain-kid/darkness-on-the-run
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false Islington Academy
+  #locationIslington Academy
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -125,11 +84,7 @@
   id: 247907359
   url: https://soundcloud.com/mountain-kid/stop
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false Islington Academy
+  #locationIslington Academy
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -137,11 +92,7 @@
   id: 247907355
   url: https://soundcloud.com/mountain-kid/amnesiawake
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false Islington Academy
+  #locationIslington Academy
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -149,11 +100,7 @@
   id: 174252073
   url: https://soundcloud.com/mountain-kid/kallipolis
   image: 
-  hide_related: true
-  show_comments: false
-  show_user: false
-  show_reposts: false
-  show_artwork: false Islington Academy
+  #locationIslington Academy
   date: '2015-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/

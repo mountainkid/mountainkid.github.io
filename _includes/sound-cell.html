@@ -1,6 +1,6 @@
 <div class='col-md-{{ include.width }}'>
-  <section class='soundcloud'>
-    <div class='embed-responsive embed-responsive-4by3'>
+  <div class='thumbnail soundcloud center-block'>
+    <div class='embed-responsive embed-responsive-16by9'>
       {% include sound.html id = include.id %}
     </div>
     <!--<dl class='dl-horizontal'>-->
@@ -33,5 +33,5 @@
       <!--  <a href='{{ include.license_url}}'>{{ site.data.licenses[include.license].short-name }}</a>-->
       <!--</dd>-->
     <!--</dl>-->
-  </section>
+  </div>
 </div>
