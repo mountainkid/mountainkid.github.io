@@ -49,11 +49,12 @@ textarea {
     border-radius: 5px;
     width: 90%;
     max-width: 500px;
+    background-color: $mk-inset;
 }
 
 input,
 textarea {
-    color: #222;
+    color: #eee;
 }
 
 .lead {

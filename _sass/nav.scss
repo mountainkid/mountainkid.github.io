@@ -36,7 +36,7 @@
 	background-color: $mk-nav;
 }
 .navbar-default .navbar-toggle {
-  border-color: $gray;
+  border-color: $gray-darker;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -45,7 +45,7 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: $gray;
+  background-color: $gray-darker;
 }
 
 /* animate header on scrolling */

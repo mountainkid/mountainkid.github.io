@@ -2,16 +2,32 @@
 <!--title: Sounds-->
 <!------->
 <a name="sounds"></a>
-<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
 <script>
   SC.initialize({
-    client_id: '66f16c68bfa3cd3aa4e824cb18e02c5a'
+    client_id: '86b258e3d9970e71e899307bad7f7c09'
   });
 </script>
 
 <div class='row'>
-  {% for sound in site.data.soundcloud limit:2 %}
-  {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 6 %}
+
+  {% for sound in site.data.soundcloud limit:1 %}
+    {% include sound-thumb.html image = sound.image location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 6 %}
+  {% endfor %}
+
+  {% for sound in site.data.soundcloud limit:1 %}
+    {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 6 %}
+  {% endfor %}
+</div>
+
+<div class='row'>
+
+  {% for sound in site.data.soundcloud limit:1 offset:1 %}
+    {% include sound-thumb.html image = sound.image location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 6 %}
+  {% endfor %}
+    
+  {% for sound in site.data.soundcloud limit:1 offset:1 %}
+    {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 6 %}
   {% endfor %}
 </div>
 

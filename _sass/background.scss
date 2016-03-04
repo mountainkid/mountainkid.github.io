@@ -6,13 +6,11 @@
 }
 
 .inner-wrapper {
-    padding-top: 25vh;
-    height: 750px;
-        min-height: 750px;
+    padding-top: 150px;
 }
 
 .panel {
-    background-color: rgba(155,205,155,0.4);
+    background-color: $mk-inset;
 }
 
 .thumbnail {
@@ -51,7 +49,7 @@ p#strapline .omega-album {
     height: 750px;
     min-height: 750px;
     background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o970.jpg');
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat:  no-repeat;
 	background-attachment: scroll;
 	background-size:  cover;
@@ -69,7 +67,7 @@ p#strapline .omega-album {
     height: 750px;
     min-height: 750px;
     background: url('images/backgrounds/background970.jpg');
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat:  no-repeat;
 	background-attachment: scroll;
 	background-size:  cover;
@@ -85,7 +83,7 @@ p#strapline .omega-album {
     height: 750px;
     min-height: 750px;
     background: url('images/backgrounds/mountain-bg.gif');
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat:  no-repeat;
 	background-attachment: scroll;
 	background-size:  cover;
@@ -101,7 +99,7 @@ p#strapline .omega-album {
     height: 750px;
     min-height: 750px;
     background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o970.jpg');
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat:  no-repeat;
 	background-attachment: scroll;
 	background-size:  cover;
@@ -115,14 +113,14 @@ p#strapline .omega-album {
 }
 #merchandise {
     background: url('/assets/images/backgrounds/background970.jpg');
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat:  no-repeat;
 	background-attachment: scroll;
 	background-size:  cover;
 }
 #licensing {
     background: url('/assets/images/backgrounds/background970.jpg');
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat:  no-repeat;
 	background-attachment: scroll;
 	background-size:  cover;
@@ -134,14 +132,14 @@ p#strapline .omega-album {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o320.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         // background-size: cover;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 50px 50px $mk-box inset;
     }
     #the-band {
         background-color: $mk-back;
@@ -151,14 +149,14 @@ p#strapline .omega-album {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/background320.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         // background-size: cover;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 50px 50px $mk-box inset;
     }
     #sounds {
         background-color: $mk-back;
@@ -168,13 +166,13 @@ p#strapline .omega-album {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/mountain-bg.gif');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 50px 50px $mk-box inset;
     }
     #videos {
         background-color: $mk-back;
@@ -184,13 +182,13 @@ p#strapline .omega-album {
         height: 750px;
         min-height: 750px;
         // background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o320.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 50px 50px $mk-box inset;
     }
     #foo {
         background-color: $mk-back;
@@ -198,14 +196,14 @@ p#strapline .omega-album {
     }
     #merchandise {
         background: url('/assets/images/backgrounds/background320.jpg');
-		background-position: center center;
+		background-position: center bottom;
 		background-repeat:  no-repeat;
 		background-attachment: scroll;
 		background-size:  cover;
     }
     #licensing {
         background: url('/assets/images/backgrounds/background320.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
@@ -218,14 +216,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o320@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         // background-size: cover;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 50px 50px $mk-box inset;
     }
     #the-band {
         background-color: $mk-back;
@@ -235,14 +233,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/background320@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         // background-size: cover;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 50px 50px $mk-box inset;
     }
     #sounds {
         background-color: $mk-back;
@@ -252,14 +250,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/mountain-bg.gif');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         // background-size: cover;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 50px 50px $mk-box inset;
     }
     #videos {
         background-color: $mk-back;
@@ -269,14 +267,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o320@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         // background-size: cover;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 50px 50px $mk-box inset;
     }
     #foo {
         background-color: $mk-back;
@@ -284,14 +282,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
     }
     #merchandise {
         background: url('/assets/images/backgrounds/background320@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
     }
     #licensing {
         background: url('/assets/images/backgrounds/background320@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
@@ -303,14 +301,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o538.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-size: contain;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 100px 100px $mk-box inset;
     }
     #the-band {
         background-color: $mk-back;
@@ -320,14 +318,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/background538.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-size: contain;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 100px 100px $mk-box inset;
     }
     #sounds {
         background-color: $mk-back;
@@ -337,14 +335,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/mountain-bg.gif');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-size: contain;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 100px 100px $mk-box inset;
     }
     #videos {
         background-color: $mk-back;
@@ -354,14 +352,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o538.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-size: contain;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 100px 100px $mk-box inset;
     }
     #foo {
         background-color: $mk-back;
@@ -369,14 +367,14 @@ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
     }
     #merchandise {
         background: url('/assets/images/backgrounds/background538.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
     }
     #licensing {
         background: url('/assets/images/backgrounds/background538.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
@@ -389,14 +387,14 @@ only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 5
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o538@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-size: contain;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 100px 100px $mk-box inset;
     }
     #the-band {
         background-color: $mk-back;
@@ -406,14 +404,14 @@ only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 5
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/background538@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-size: contain;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 100px 100px $mk-box inset;
     }
     #sounds {
         background-color: $mk-back;
@@ -423,14 +421,14 @@ only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 5
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/mountain-bg.gif');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-size: contain;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 100px 100px $mk-box inset;
     }
     #videos {
         background-color: $mk-back;
@@ -440,14 +438,14 @@ only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 5
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o538@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
         background-size: contain;
         background-color: $mk-back;
         background-blend-mode: darken;
-        box-shadow: 0 0 150px 150px $mk-box inset;
+        box-shadow: 0 0 100px 100px $mk-box inset;
     }
     #foo {
         background-color: $mk-back;
@@ -455,14 +453,14 @@ only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 5
     }
     #merchandise {
         background: url('/assets/images/backgrounds/background538@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
     }
     #licensing {
         background: url('/assets/images/backgrounds/background538@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
@@ -475,7 +473,7 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o970@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
@@ -491,7 +489,7 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/background970@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
@@ -507,7 +505,7 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/mountain-bg.gif');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
@@ -523,7 +521,7 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
         height: 750px;
         min-height: 750px;
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o970@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
@@ -537,14 +535,14 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
     }
     #merchandise {
         background: url('/assets/images/backgrounds/background970@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
     }
     #licensing {
         background: url('/assets/images/backgrounds/background970@2x.jpg');
-	    background-position: center center;
+	    background-position: center bottom;
 	    background-repeat:  no-repeat;
 	    background-attachment: scroll;
 	    background-size:  cover;
