@@ -27,7 +27,7 @@
     {% if page.with_nav %}
       {% include navigation.html trim_class = page.trim_class %}
     {% endif %}
-    <div class='container-fluid'>
+    <div class='container-fluid wrapper'>
       {% unless page.no_title %}
         {% assign title = page.title %}
         {% if page.extra_title %}
