@@ -1,17 +1,18 @@
 .soundcloud, .flickr, .band-member, .vimeo {
-  .dl-horizontal {
-    font-size: 0.7em;
+  .caption {
+    font-size: 0.9em;
     padding: 5px;
 
     dt {
-      width: 50%;
-      margin-right: 5px;
+      width: 100%;
+      margin-left: 0px;
       color: $rfm-orange;
       white-space: normal;
     }
 
     dd {
       margin-left: 5px;
+      color: #eee;
     }
   }
 

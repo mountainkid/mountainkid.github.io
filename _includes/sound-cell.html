@@ -1,9 +1,15 @@
 <div class='col-md-{{ include.width }}'>
-  <div class='thumbnail soundcloud center-block'>
+  <div class='thumbnail soundcloud'>
     <div class='embed-responsive embed-responsive-16by9'>
       {% include sound.html id = include.id %}
     </div>
-    <!--<dl class='dl-horizontal'>-->
+    <dl class='caption'>
+      <dt>
+        Track ::
+      </dt>
+      <dd>
+        {{ include.title }}
+      </dd>
       <!--<dt>-->
       <!--  Recorded at:-->
       <!--</dt>-->
@@ -17,7 +23,7 @@
       <!--  {% if include.engineer %}-->
       <!--    {{ include.engineer }}-->
       <!--  {% else %}-->
-      <!--    Joe-->
+      <!--    Gary Long -->
       <!--  {% endif %}-->
       <!--</dd>-->
       <!--<dt>-->
@@ -32,6 +38,6 @@
       <!--<dd>-->
       <!--  <a href='{{ include.license_url}}'>{{ site.data.licenses[include.license].short-name }}</a>-->
       <!--</dd>-->
-    <!--</dl>-->
+    </dl>
   </div>
 </div>

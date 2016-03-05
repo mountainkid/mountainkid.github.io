@@ -14,7 +14,7 @@
     &nbsp;
   </div>
   {% for sound in site.data.soundcloud limit:1 %}
-    {% include sound-thumb.html image = sound.image location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 4 %}
+    {% include sound-thumb.html title = sound.title image = sound.image location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 4 %}
   {% endfor %}
   <div class='col-md-4'>
     &nbsp;
@@ -25,7 +25,7 @@
     &nbsp;
   </div>  
   {% for sound in site.data.soundcloud limit:5 offset:2 %}
-    {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 2 %}
+    {% include sound-cell.html id = sound.id title = sound.title location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 2 %}
   {% endfor %}
    <div class='col-md-1 hidden-sm hidden-xs'>
     &nbsp;
@@ -37,7 +37,7 @@
     &nbsp;
   </div>  
   {% for sound in site.data.soundcloud limit:1 offset:1 %}
-    {% include sound-thumb.html image = sound.image location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 4%}
+    {% include sound-thumb.html title = sound.title image = sound.image location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 4%}
   {% endfor %}
   <div class='col-md-4'>
     &nbsp;
@@ -48,7 +48,7 @@
     &nbsp;
   </div>
   {% for sound in site.data.soundcloud limit:5 offset:7 %}
-    {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 2 %}
+    {% include sound-cell.html id = sound.id title = sound.title location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 2 %}
   {% endfor %}
   <div class='col-md-1 hidden-sm hidden-xs'>
     &nbsp;
@@ -57,13 +57,13 @@
 
 <!--<div class='row'>-->
   {% for sound in site.data.soundcloud limit:0 offset:2 %}
-    {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
+    {% include sound-cell.html id = sound.id title = sound.title location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
   {% endfor %}
 <!--</div>-->
 
 
 <!--<div class='row'>-->
   {% for sound in site.data.soundcloud limit:0 offset:6 %}
-    {% include sound-cell.html id = sound.id location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
+    {% include sound-cell.html id = sound.id title = sound.title location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
   {% endfor %}
 <!--</div>-->
