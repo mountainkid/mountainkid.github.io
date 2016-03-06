@@ -1,7 +1,7 @@
       <!-- mobile -->
       <ul class='nav nav-buttons hidden-md hidden-lg mobile' role='tablist'>
         {% for item in site.data.navigation %}
-          {% include nav-item.html title = item.title path = item.path trim_class = include.trim_class current = page.url  type = item.type sections = item.sections %}
+          {% include nav-item.html title = item.title path = item.path trim_class = include.trim_class current = page.url %}
         {% endfor %}
       </ul>
 
