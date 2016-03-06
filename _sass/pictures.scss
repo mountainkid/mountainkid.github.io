@@ -1,6 +1,6 @@
-$flickr-height: 240px;
+$picture-height: 240px;
 
-.flickr {
+.picture {
   h1, h2, h3 {
     font-size: 1em;
     margin-top: 0px;
@@ -11,7 +11,7 @@ $flickr-height: 240px;
   }
 
   img {
-    max-height: $flickr-height;
+    max-height: $picture-height;
   }
 }
 

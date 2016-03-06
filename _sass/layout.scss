@@ -6,7 +6,8 @@
 }
 
 .inner-wrapper {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .panel {
@@ -17,21 +18,8 @@
     background-color: transparent;
 }
 
-p#strapline {
-    padding-top: 10px;
-    color: #eee;
-}
-
-p#strapline .alpha-album {
-    color: $rfm-orange;
-}
-
-p#strapline .omega-album {
-    color: $rfm-green;
-}
-
 /* default screen, non-retina */
-#home, #sounds, #campfire {
+#home, #media, #campfire {
     min-height: 750px;
 }
 #home {
@@ -40,9 +28,9 @@ p#strapline .omega-album {
         padding-top: 25vh;
     }
 }
-#sounds {
-    background: url('images/backgrounds/mkdisk_white970.png');
-}
+// #media {
+//     background: url('images/backgrounds/mkdisk_white970.png');
+// }
 #campfire {
     background: url('images/backgrounds/mk_shadow_970.jpg');
 }
@@ -52,69 +40,51 @@ p#strapline .omega-album {
 
 @media only screen and (max-width: 320px) {
     /* Small screen, non-retina */
-    #home, #sounds, #campfire {
+    #home, #campfire {
         min-height: 750px;
     }    
     #home {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o320.jpg');
     }
-    #sounds {
-        background: url('images/backgrounds/mkdisk_white320.png');
-    }
+    // #media {
+    //     background: url('images/backgrounds/mkdisk_white320.png');
+    // }
     #campfire {
         background: url('images/backgrounds/mk_shadow_320.jpg');
     }
     #book-the-band-bk {
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o320.jpg');
     }
-    // #home, #sounds, #campfire {
-	   // background-position: center bottom;
-	   // background-repeat: no-repeat;
-	   // background-attachment: scroll;
-	   // background-size: cover;
-    //     background-color: $mk-back;
-    //     background-blend-mode: darken;
-    //     box-shadow: 0 0 50px 50px $mk-box inset;
-    // }
 }
 @media only screen and (min-resolution: 2dppx) and (max-width: 320px) {
     /* Small screen, retina */
-    #home, #sounds, #campfire {
+    #home, #campfire {
         min-height: 750px;
     }    
     #home {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o320@2x.jpg');
     }
-    #sounds {
-        background: url('images/backgrounds/mkdisk_white320@2x.png');
-    }
+    // #media {
+    //     background: url('images/backgrounds/mkdisk_white320@2x.png');
+    // }
     #campfire {
         background: url('images/backgrounds/mk_shadow_320@2x.jpg');
     }
     #book-the-band-bk {
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o320@2x.jpg');
     }
-    // #home, #sounds, #campfire {
-	   // background-position: center bottom;
-	   // background-repeat: no-repeat;
-	   // background-attachment: scroll;
-	   // background-size: cover;
-    //     background-color: $mk-back;
-    //     background-blend-mode: darken;
-    //     box-shadow: 0 0 50px 50px $mk-box inset;
-    // }
 }
 @media only screen and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, non-retina */
-    #home, #sounds, #campfire {
+    #home, #campfire {
         min-height: 750px;
     }    
     #home {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o538.jpg');
     }
-    #sounds {
-        background: url('images/backgrounds/mkdisk_white538.png');
-    }
+    // #media {
+    //     background: url('images/backgrounds/mkdisk_white538.png');
+    // }
     #campfire {
         background: url('images/backgrounds/mk_shadow_538.jpg');
     }
@@ -122,54 +92,36 @@ p#strapline .omega-album {
     #book-the-band-bk {
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o538.jpg');
     }
-    // #home, #sounds, #campfire {
-	   // background-position: center bottom;
-	   // background-repeat: no-repeat;
-	   // background-attachment: scroll;
-	   // background-size: cover;
-    //     background-color: $mk-back;
-    //     background-blend-mode: darken;
-    //     box-shadow: 0 0 75px 75px $mk-box inset;
-    // }
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, retina */
-    #home, #sounds, #campfire {
+    #home, #campfire {
         min-height: 750px;
     }    
     #home {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o538@2x.jpg');
     }
-    #sounds {
-        background: url('images/backgrounds/mkdisk_white538@2x.png');
-    }
+    // #media {
+    //     background: url('images/backgrounds/mkdisk_white538@2x.png');
+    // }
     #campfire {
         background: url('images/backgrounds/mk_shadow_538@2x.jpg');
     }
     #book-the-band-bk {
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o538@2x.jpg');
     }
-    // #home, #sounds, #campfire {
-	   // background-position: center bottom;
-	   // background-repeat: no-repeat;
-	   // background-attachment: scroll;
-	   // background-size: cover;
-    //     background-color: $mk-back;
-    //     background-blend-mode: darken;
-    //     box-shadow: 0 0 75px 75px $mk-box inset;
-    // }
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 539px) {
     /* Large screen, retina */
-    #home, #sounds, #campfire {
+    #home, #campfire {
         min-height: 750px;
     }    
     #home {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o970@2x.jpg');
     }
-    #gigs {
-        background: url('images/backgrounds/mkdisk_white970@2x.png');
-    }
+    // #media {
+    //     background: url('images/backgrounds/mkdisk_white970@2x.png');
+    // }
     #campfire {
         background: url('images/backgrounds/mk_shadow_970@2x.jpg');
     }
@@ -187,29 +139,29 @@ p#strapline .omega-album {
     box-shadow: 0 0 100px 100px $mk-box inset;
 }
 
-#sounds {
-    background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: contain;
-    background-color: $mk-back;
-    background-blend-mode: lighten;
-}
-@media only screen and (max-width: 320px) {
-    /* Small screen, non-retina */
-    #sounds {
-        box-shadow: 0 0 25px 25px $mk-box inset;
-    }
-}
-@media only screen and (min-width: 321px) and (max-width: 538px) {
-    /* Medium screen, non-retina */
-    #sounds {
-        box-shadow: 0 0 50px 50px $mk-box inset;
-    }    
-}
-@media only screen and (min-width: 539px) {
-    /* Large screen, non-retina */
-    #home, #sounds, #campfire {
-        box-shadow: 0 0 300px 300px $mk-box inset;
-    }
-}
+// #media {
+//     background-position: center center;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// 	background-size: contain;
+//     background-color: $mk-back;
+//     background-blend-mode: lighten;
+// }
+// @media only screen and (max-width: 320px) {
+//     /* Small screen, non-retina */
+//     #media {
+//         box-shadow: 0 0 25px 25px $mk-box inset;
+//     }
+// }
+// @media only screen and (min-width: 321px) and (max-width: 538px) {
+//     /* Medium screen, non-retina */
+//     #media {
+//         box-shadow: 0 0 50px 50px $mk-box inset;
+//     }    
+// }
+// @media only screen and (min-width: 539px) {
+//     /* Large screen, non-retina */
+//     #home, #media, #campfire {
+//         box-shadow: 0 0 300px 300px $mk-box inset;
+//     }
+// }

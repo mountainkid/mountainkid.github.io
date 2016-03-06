@@ -1,0 +1,12 @@
+input, textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+    color: #eee;
+    background-color: $mk-inset;
+}

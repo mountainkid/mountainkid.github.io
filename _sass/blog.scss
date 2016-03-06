@@ -1,5 +1,5 @@
 .blog {
-  background: $rfm-orange;
+  background: $mk-alpha;
   background-image: url('/assets/images/backgrounds/background_orange.jpg');
   opacity: 1;
 
@@ -7,7 +7,7 @@
     li {
 
       a:hover, a:focus {
-        background-color: $rfm-green;
+        background-color: $mk-omega;
         opacity: 0.9;
       }
     }
@@ -15,7 +15,7 @@
 
   .links {
     a:hover, a:focus {
-      background-color: $rfm-green;
+      background-color: $mk-omega;
       opacity: 0.9;
     }
   }
@@ -28,7 +28,7 @@
     text-align: right;
   }
   font-size: 0.5em;
-  background-color: $rfm-orange;
+  background-color: $mk-alpha;
   background-image: url('/assets/images/backgrounds/background_orange.jpg');
   padding-top: $padding-small-vertical;
   margin-bottom: $padding-large-vertical;

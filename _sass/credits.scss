@@ -1,4 +1,4 @@
-.soundcloud, .flickr, .band-member, .vimeo {
+.soundcloud, .band-member, .youtube {
   .caption {
     font-size: 0.9em;
     padding: 5px;
@@ -6,7 +6,7 @@
     dt {
       width: 100%;
       margin-left: 0px;
-      color: $rfm-orange;
+      color: $mk-alpha;
       white-space: normal;
     }
 
@@ -23,8 +23,8 @@
 
 .attribution {
   font-size: 0.5em;
-  background: $rfm-orange;
+  background: $mk-alpha;
   a {
-    color: $rfm-green;
+    color: $mk-omega;
   }
 }

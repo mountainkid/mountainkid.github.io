@@ -9,10 +9,10 @@
 .olControlAttribution {
   right: 5px;
   top: 280px;
-  color: $rfm-orange;
+  color: $mk-alpha;
   font-weight: bold;
   a {
-    color: $rfm-dark-green;
+    color: $mk-dark;
   }
 }
 
@@ -33,10 +33,10 @@
 }
 
 .gig {
-  // font-size: 1.5em;
+  font-size: 1.1em;
 
   dt {
-    color: $rfm-orange;
+    color: $mk-alpha;
   }
 
   dd {
@@ -50,8 +50,8 @@
   bottom:70px;
   right:1%;
   font-size: 1em;
-  background-color: $rfm-green;
-  color: $rfm-orange;
+  background-color: $mk-omega;
+  color: $mk-alpha;
   opacity: 0.7;
   margin: 0px;
   padding: 0px;
@@ -62,8 +62,8 @@
   }
 
   a:hover {
-    background-color: $rfm-orange;
-    color: $rfm-green;
+    background-color: $mk-alpha;
+    color: $mk-omega;
     text-decoration: none;
   }
 }

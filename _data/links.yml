@@ -14,10 +14,10 @@
   url:         https://instagram.com/mountainkidmusic
   fontawesome: fa-instagram
 
-#- title:       YouTube
-#  url:         https://youtube.com/mountainkidmusic
-#  fontawesome: fa-youtube
+- title:       YouTube
+  url:         https://youtube.com/channel/UCse43hDVQcBsX4IRa7cvMwQ
+  fontawesome: fa-youtube
   
-- title:       Github
-  url:         https://github.com/mountainkid/
-  fontawesome: fa-github
+# - title:       Github
+#   url:         https://github.com/mountainkid/
+#   fontawesome: fa-github

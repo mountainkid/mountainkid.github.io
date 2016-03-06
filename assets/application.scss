@@ -1,6 +1,5 @@
 ---
 ---
-
 @import 'fonts';
 @import 'bootstrap-custom';
 @import 'bootstrap';
@@ -12,8 +11,10 @@
 @import 'pictures';
 @import 'gigs';
 @import 'credits';
+@import 'strapline';
 @import 'cta';
 @import 'throbbing-gristle';
+@import 'contact';
 @import 'layout';
 
 body {
@@ -23,7 +24,7 @@ body {
 }
 
 a {
-  color: $rfm-green;
+  color: $mk-omega;
 }
 
 h1, h2, h3, h4 {
@@ -34,29 +35,11 @@ h1, h2, h3, h4 {
   font-weight: bolder;
   text-align: center;
   text-transform: lowercase;
-  color: $rfm-orange;
+  color: $mk-alpha;
 }
 
 p {
   font-size: 1.5em;
-}
-
-input,
-textarea {
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    width: 90%;
-    max-width: 500px;
-    background-color: $mk-inset;
-}
-
-input,
-textarea {
-    color: #eee;
 }
 
 .lead {

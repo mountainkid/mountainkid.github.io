@@ -1,10 +1,10 @@
-$mk-back:        #0a0a0a;
-$mk-box:         #0a0a0a;
-$mk-inset:       rgba(10,10,10,0.8);
-$mk-nav:         rgba(10,10,10,0.8);
-$rfm-green:      #0856a8; //#0b3135
-$rfm-orange:     #996633;
-$rfm-dark-green: #111;
+$mk-back:       #0a0a0a;
+$mk-box:        #0a0a0a;
+$mk-inset:      rgba(10,10,10,0.8);
+$mk-nav:        rgba(10,10,10,0.8);
+$mk-omega:      #0856a8; //#0b3135
+$mk-alpha:      #996633;
+$mk-dark:       #111;
 
 $gray-darker:   lighten(#000, 13.5%); // #222
 $gray-dark:     lighten(#000, 20%);   // #333
@@ -12,5 +12,5 @@ $gray:          lighten(#000, 33.5%); // #555
 $gray-light:    lighten(#000, 46.7%); // #777
 $gray-lighter:  lighten(#000, 93.5%); // #eee
 
-$brand-primary: $rfm-green;
-$brand-info:    $rfm-orange;
+$brand-primary: $mk-omega;
+$brand-info:    $mk-alpha;

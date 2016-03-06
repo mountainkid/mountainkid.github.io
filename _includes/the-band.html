@@ -1,6 +1,6 @@
-<!------->
-<!--title: The Band-->
-<!------->
+<!------------>
+<!--The Band-->
+<!------------>
 <a name="the-band"></a>
 <div class="container-fluid">
 <div id="blueimp-gallery" class="blueimp-gallery">
@@ -39,13 +39,32 @@
 <div id="links">
 
   <div class='row'>
-    {% for member in site.data.band %}
+      
+      <div class='col-md-2 col-sm-2 hidden-xs'></div>
+    {% for member in site.data.band limit:2 %}
 
       {% capture thumbnail %}/assets/images/the-band/thumbnails/{{ member.image }}{% endcapture %}
       {% capture full_image %}/assets/images/the-band/{{ member.image }}{% endcapture %}
-      {% include picture.html cols = 3 class = 'band-member' thumbnail = thumbnail full_image = full_image title = member.name instrument = member.instrument license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
+      {% include picture.html cols = 4 class = 'band-member' thumbnail = thumbnail full_image = full_image title = member.name instrument = member.instrument license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
 
     {% endfor %}
+    
+      <div class='col-md-2 col-sm-2 hidden-xs'></div>
+      
+  </div>
+  <div class='row'>
+      
+      <div class='col-md-2 col-sm-2 hidden-xs'></div>
+    {% for member in site.data.band limit:2 offset:2 %}
+
+      {% capture thumbnail %}/assets/images/the-band/thumbnails/{{ member.image }}{% endcapture %}
+      {% capture full_image %}/assets/images/the-band/{{ member.image }}{% endcapture %}
+      {% include picture.html cols = 4 class = 'band-member' thumbnail = thumbnail full_image = full_image title = member.name instrument = member.instrument license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
+
+    {% endfor %}
+    
+      <div class='col-md-2 col-sm-2 hidden-xs'></div>
+      
   </div>
   
 </div>
