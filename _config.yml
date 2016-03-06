@@ -29,7 +29,13 @@ markdown: kramdown
 #paginate_path: "/blog/page:num/"
 
 sass:
-    style: compressed
+  style: compressed
+    
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+
     
 defaults:
   -
