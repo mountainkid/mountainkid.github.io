@@ -35,24 +35,22 @@ defaults:
   -
     scope:
       path: ''
-
     values:
       layout: default
-
   -
     scope:
       type: posts
       path: gigs
-
     values:
       layout: gig
       pretitle: Gig
-
+      trim_class: gig
+      no_header: false
+      with_nav: false
   -
     scope:
       type: posts
-      path: blog
-
+      path: /blog
     values:
       layout: blost
       pretitle: Blog

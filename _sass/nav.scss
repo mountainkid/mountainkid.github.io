@@ -14,10 +14,11 @@
   }
 }
 
+
 .nav {
   li {
     a {
-      color: #333;
+      color: #eee;
     }
 
     a:hover, a:focus {
@@ -36,7 +37,7 @@
 	background-color: $mk-nav;
 }
 .navbar-default .navbar-toggle {
-  border-color: $gray-darker;
+  border-color: $gray-lighter;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -45,7 +46,7 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: $gray-darker;
+  background-color: $gray-lighter;
 }
 
 /* animate header on scrolling */

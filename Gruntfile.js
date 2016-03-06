@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'assets/application.min.js': ['javascript/bootstrap.js', 'javascript/top-nav.js']
+          'assets/application.min.js': ['javascript/bootstrap.js']
         }
       }
     },

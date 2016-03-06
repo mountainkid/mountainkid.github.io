@@ -21,11 +21,12 @@
 
   <body data-spy="scroll" data-target="#navbar-highlight">
     <link rel='stylesheet' href='/assets/application.css' type='text/css'/>
-    {% unless page.no_header %}
+    <div class="container-fluid">
+    {% unless page.cover_page %}
       {% include header.html trim_class = page.trim_class %}
     {% endunless %}
-    {% if page.with_nav %}
-      {% include navigation.html trim_class = page.trim_class %}
+    {% if page.cover_page %}
+      {% include header_cover.html trim_class = page.trim_class %}
     {% endif %}
     <div class='container-fluid wrapper'>
       {% unless page.no_title %}
@@ -33,7 +34,7 @@
         {% if page.extra_title %}
           {% capture title %}{{ page.extra_title }} {{ title }}{% endcapture %}
         {% endif %}
-        <h1 class='main-title'>{{ title }}</h1>
+        <!--<h1 class='main-title'>{{ title }}</h1>-->
       {% endunless %}
       {{ content }}
       {% if page.license_these %}
@@ -43,6 +44,7 @@
     <div class='container'>
       {% include footer.html trim_class = page.trim_class %}
       {% include js-boilerplate.html %}
+    </div>
     </div>
   </body>
 </html>

@@ -3,13 +3,13 @@
 
 - title: Gigs
   path:  "#gigs"
-  active: gig
   
 # - title: Sounds
 #   path:  "#sounds"
 
 - title: Media
   path:  "#media"
+  nav_class: dropdown
 
 # - title: Videos
 #   path:  "#videos"
@@ -18,7 +18,7 @@
   path:  "#book-the-band"
 
 - title: Reviews
-  path:  "#feedback"
+  path:  "#reviews"
 
 #- title: Merchandise
 #  path:  "#merchandise"

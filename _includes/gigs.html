@@ -25,7 +25,7 @@
             {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
             {% if future < '0' %}
               {% capture upcoming_gigs %}{{ 'true' }}{% endcapture %}
-              {% include gig.html date = post.date url = post.link title = post.title with_day = true %}
+              {% include gig.html date = post.date url = post.url title = post.title with_day = true %}
             {% endif %}
           {% endfor %}
         </dl>
@@ -47,7 +47,7 @@
               {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
               {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
               {% if future > '0' %}
-                {% include gig.html date = post.date url = false title = post.title with_year = true %}
+                {% include gig.html date = post.date url = post.url title = post.title with_year = true %}
               {% endif %}
             {% endfor %}
 

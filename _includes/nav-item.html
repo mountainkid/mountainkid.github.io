@@ -1,3 +1,14 @@
-<li>
-  <a href='{{ include.path }}'>{{ include.title }}</a>
-</li>
+{% if include.trim_class == 'gig' %}
+  {% if include.title == 'Gigs' %}
+  <li class='active'>
+  {% else %}
+  <li>
+  {% endif %}
+    <a href='{{ site.baseurl }}/{{ include.path }}'>{{ include.title }}</a>
+  </li>
+
+{% else %}
+  <li>
+    <a href='{{ include.path }}'>{{ include.title }}</a>
+  </li>
+{% endif %}

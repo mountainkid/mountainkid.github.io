@@ -26,7 +26,12 @@ $header-height:0px;
     width: 80%;
     height: auto;
     position: relative;
-    top: -200px;
+  }
+  
+  .navbar-brand {
+    max-width: 70%;
+    height: auto;
+    position: relative;
   }
 
   .header-container {
