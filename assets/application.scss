@@ -121,11 +121,14 @@ p.splash{
       float: left;
       width: ($dl-horizontal-offset - 20);
       clear: left;
-      text-align: right;
+      text-align: left;
       @include text-overflow();
     }
     dd {
-      margin-left: $dl-horizontal-offset;
+      margin-left: ($dl-horizontal-offset - 100);
+      float: right;
+      width: 100%;
+      text-align: left;
     }
   }
 }

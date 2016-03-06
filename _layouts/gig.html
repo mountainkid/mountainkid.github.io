@@ -4,33 +4,33 @@ extra_title: Live at
 gig_og: true
 trim_class: gig
 ---
-<div id='gig'>
-<div class='container'>
-  <div class="container inner-wrapper">
+<div id='gig-layout'>
+  <div class='container'>
+  <div class='container inner-wrapper'>
     <h1 class='main-title'>{{ page.title }}</h1>
 <div class='row'>
   <article>
-
-    <div class='col-md-6'>
+    <div class='col-md-2 hidden-xs'></div>
+    <div class='col-md-3'>
       <div class='gig'>
-        <dl class='dl-horizontal'>
+        <dl>
 
-          <dt>Date<dt>
+          <dt>Date ::<dt>
           <dd>{{ page.date | date: "%A %-d %B %Y" }}</dd>
-
-          <dt>Time</dt>
+          
+          <dt>Time ::</dt>
           <dd>{{ page.time }}</dd>
 
-          <dt>Location</dt>
+          <dt>Location ::</dt>
           <dd>{{ page.location | replace: ',', ',<br />'}}</dd>
 
           {% if page.price %}
-            <dt>Price</dt>
+            <dt>Price ::</dt>
             <dd>{{ page.price }}</dd>
           {% endif %}
 
           {% if page.facebook_id %}
-            <dt>More info</dt>
+            <dt>More info ::</dt>
             <dd>
               <a href='https://facebook.com/events/{{ page.facebook_id }}/' title='Facebook event'>
                 Facebook
@@ -42,9 +42,11 @@ trim_class: gig
       </div>
     </div>
 
-    <div class='col-md-6'>
+    <div class='col-md-5'>
       {% include map.html latitude = page.latitude longitude = page.longitude %}
     </div>
+    
+    <div class='col-md-2 hidden-xs'></div>
   </article>
 
 </div>
