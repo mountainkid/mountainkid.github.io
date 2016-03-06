@@ -113,22 +113,3 @@ p.splash{
   padding-bottom: 10px;
   opacity: 0.8;
 }
-
-// cargo-culted straight outta bootstrap
-.dl-horizontal {
-  @media (min-width: 0) {
-    dt {
-      float: left;
-      width: ($dl-horizontal-offset - 20);
-      clear: left;
-      text-align: left;
-      @include text-overflow();
-    }
-    dd {
-      margin-left: ($dl-horizontal-offset - 100);
-      float: right;
-      width: 100%;
-      text-align: left;
-    }
-  }
-}

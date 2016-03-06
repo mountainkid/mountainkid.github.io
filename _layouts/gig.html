@@ -11,9 +11,9 @@ trim_class: gig
 <div class='row'>
   <article>
     <div class='col-md-2 hidden-xs'></div>
-    <div class='col-md-3'>
+    <div class='col-md-4'>
       <div class='gig'>
-        <dl>
+        <dl class="dl-horizontal">
 
           <dt>Date ::<dt>
           <dd>{{ page.date | date: "%A %-d %B %Y" }}</dd>
@@ -42,7 +42,7 @@ trim_class: gig
       </div>
     </div>
 
-    <div class='col-md-5'>
+    <div class='col-md-4'>
       {% include map.html latitude = page.latitude longitude = page.longitude %}
     </div>
     

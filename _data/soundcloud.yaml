@@ -3,6 +3,12 @@
   id: 197898873
   url: https://soundcloud.com/mountain-kid/sets/the-realist-alpha
   image: alpha.jpg
+  tracks:
+    - title: Monotony
+    - title: Feet First
+    - title: Darkness on the Run
+    - title: Stop
+    - title: Amnesiawake
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -10,7 +16,12 @@
   id: 197906998
   url: https://soundcloud.com/mountain-kid/sets/the-realist-omega
   image: omega.jpg
-  #location
+  tracks:
+    - title: Spectacle
+    - title: The Tick
+    - title: The Realist
+    - title: Cross This Body
+    - title: No Ghost
   date: '2016-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/

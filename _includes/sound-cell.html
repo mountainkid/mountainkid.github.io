@@ -1,14 +1,24 @@
 <div class='col-md-{{ include.width }}'>
-  <div class='thumbnail soundcloud'>
-    <div class='embed-responsive embed-responsive-16by9'>
+  <div class='thumbnail soundcloud center-block'>
+    <div class='embed-responsive embed-responsive-4by3'>
       {% include sound.html id = include.id %}
     </div>
-    <dl class='caption'>
+    <dl class='caption dl-horizontal'>
       <dt>
-        Track ::
+        Album ::
       </dt>
       <dd>
         {{ include.title }}
+      </dd>
+      <dt>
+        Tracks ::
+      </dt>
+      <dd>
+        {% for track in include.tracks %}
+          {% capture track_index %}{{ forloop.index }}{% endcapture %}
+          {% capture track_title %}{{ track.title }}{% endcapture %}
+          {{ track_index }} :: {{ track.title }}<br />
+        {% endfor %}
       </dd>
       <dt>
         Recorded at:

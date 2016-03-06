@@ -1,15 +1,13 @@
-<!---------->
-<!--Videos-->
-<!---------->
 <a name="videos"></a>
+{% for video in site.data.youtube %}
 <div class='row'>
-  {% for video in site.data.youtube %}
+  <div class='col-md-3 hidden-xs'></div>
     <div class='col-md-6'>
-      <section class='thumbnail vimeo'>
+      <section class='thumbnail youtube'>
         <div class='embed-responsive embed-responsive-16by9'>
           {% include video.html id = video.id %}
         </div>
-         <dl>
+         <dl class=" caption dl-horizontal">
           <dt>
             License:
           </dt>
@@ -19,5 +17,6 @@
         </dl>
       </section>
     </div>
-  {% endfor %}
-</div>
+  <div class='col-md-3 hidden-xs'></div>  
+</div>  
+{% endfor %}

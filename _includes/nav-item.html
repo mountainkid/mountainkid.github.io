@@ -6,9 +6,25 @@
   {% endif %}
     <a href='{{ site.baseurl }}/{{ include.path }}'>{{ include.title }}</a>
   </li>
-
 {% else %}
+{% if include.type == 'dropdown' %}
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      {{ include.title }} <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      {% for section in include.sections %}
+      {% capture section_title %}{{ section.title }}{% endcapture %}
+      <li>
+        <a href='{{ section.path }}'>{{ section_title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+{% endif %}
+{% unless include.type == 'dropdown' %} 
   <li>
     <a href='{{ include.path }}'>{{ include.title }}</a>
   </li>
+{% endunless %}
 {% endif %}

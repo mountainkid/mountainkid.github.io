@@ -12,7 +12,7 @@
       <section>
 
         <h2>Upcoming</h2>
-        <dl class='future-gigs'>
+        <dl class='future-gigs dl-horizontal'>
 
           {% for post in site.categories.gigs reversed %}
             {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}
@@ -35,7 +35,7 @@
 
 
           <h2>Archive</h2>
-          <dl class='past-gigs'>
+          <dl class='past-gigs dl-horizontal'>
 
             {% for post in site.categories.gigs %}
               {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}

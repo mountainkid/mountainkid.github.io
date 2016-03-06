@@ -11,20 +11,20 @@
     &nbsp;
   </div>
   {% for sound in site.data.soundcloud limit:1 %}
-    {% include sound-thumb.html title = sound.title image = sound.image location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 4 %}
+    {% include sound-thumb.html image = sound.image width = 4 %}
   {% endfor %}
   <div class='col-md-4'>
     &nbsp;
   </div>
 </div>
 <div class='row'>
-  <div class='col-md-1 hidden-sm hidden-xs'>
+  <div class='col-md-2 hidden-sm hidden-xs'>
     &nbsp;
   </div>  
-  {% for sound in site.data.soundcloud limit:5 offset:2 %}
-    {% include sound-cell.html id = sound.id title = sound.title location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 2 %}
+  {% for sound in site.data.soundcloud limit:1 %}
+    {% include sound-cell.html id = sound.id title = sound.title tracks = sound.tracks location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 8 %}
   {% endfor %}
-   <div class='col-md-1 hidden-sm hidden-xs'>
+   <div class='col-md-2 hidden-sm hidden-xs'>
     &nbsp;
   </div> 
 </div>
@@ -34,20 +34,20 @@
     &nbsp;
   </div>  
   {% for sound in site.data.soundcloud limit:1 offset:1 %}
-    {% include sound-thumb.html title = sound.title image = sound.image location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 4%}
+    {% include sound-thumb.html image = sound.image width = 4%}
   {% endfor %}
   <div class='col-md-4'>
     &nbsp;
   </div>  
 </div>
 <div class='row'>  
-  <div class='col-md-1 hidden-sm hidden-xs'>
+  <div class='col-md-2 hidden-sm hidden-xs'>
     &nbsp;
   </div>
-  {% for sound in site.data.soundcloud limit:5 offset:7 %}
-    {% include sound-cell.html id = sound.id title = sound.title location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 2 %}
+  {% for sound in site.data.soundcloud limit:1 offset:1 %}
+    {% include sound-cell.html id = sound.id title = sound.title tracks = sound.tracks location = sound.location engineer = sound.engineer date = sound.date license = sound.license license_url = sound.license_url width = 8 %}
   {% endfor %}
-  <div class='col-md-1 hidden-sm hidden-xs'>
+  <div class='col-md-2 hidden-sm hidden-xs'>
     &nbsp;
   </div>
 </div>
