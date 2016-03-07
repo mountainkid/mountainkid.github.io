@@ -1,52 +1,16 @@
-<!------->
-<!--title: Pictures-->
-<!------->
 <a name="pictures"></a>
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div class="containder-fluid">
-<div id="blueimp-gallery" class="blueimp-gallery">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body next"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left prev">
-                        Previous
-                    </button>
-                    <button type="button" class="btn btn-primary next">
-                        Next
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
 <div id="links">
   
   <div class='row'>
+    <div class='col-md-2 col-sm-2 hidden-xs'></div>
+    <div class='col-md-8 text-center'>
     {% for picture in site.data.pics %}
-      {% include picture.html cols = 4 class = 'flickr' thumbnail = picture.thumbnail title = picture.title full_image = picture.full_image photographer = picture.photographer license = picture.license license_url = picture.license_url %}
-      {% cycle '', '', "</div><div class='row'>" %}
+      {% include lightbox.html cols = 4 class = 'lightbox' thumbnail = picture.thumbnail title = picture.title full_image = picture.full_image %}
     {% endfor %}
+    </div>
+    <div class='col-md-2 col-sm-2 hidden-xs'></div>
   </div>
 </div>
-
 
 
 

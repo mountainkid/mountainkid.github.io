@@ -19,10 +19,10 @@
 }
 
 /* default screen, non-retina */
-#home, #media, #campfire {
+#cover, #campfire {
     min-height: 750px;
 }
-#home {
+#cover {
     background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o970.jpg');
     img {
         padding-top: 25vh;
@@ -40,10 +40,10 @@
 
 @media only screen and (max-width: 320px) {
     /* Small screen, non-retina */
-    #home, #campfire {
-        min-height: 750px;
+    #cover, #campfire {
+        min-height: 500px;
     }    
-    #home {
+    #cover {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o320.jpg');
     }
     // #media {
@@ -58,10 +58,10 @@
 }
 @media only screen and (min-resolution: 2dppx) and (max-width: 320px) {
     /* Small screen, retina */
-    #home, #campfire {
-        min-height: 750px;
+    #cover, #campfire {
+        min-height: 500px;
     }    
-    #home {
+    #cover {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o320@2x.jpg');
     }
     // #media {
@@ -76,10 +76,10 @@
 }
 @media only screen and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, non-retina */
-    #home, #campfire {
-        min-height: 750px;
+    #cover, #campfire {
+        min-height: 600px;
     }    
-    #home {
+    #cover {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o538.jpg');
     }
     // #media {
@@ -95,10 +95,10 @@
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, retina */
-    #home, #campfire {
-        min-height: 750px;
+    #cover, #campfire {
+        min-height: 600px;
     }    
-    #home {
+    #cover {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o538@2x.jpg');
     }
     // #media {
@@ -113,10 +113,10 @@
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 539px) {
     /* Large screen, retina */
-    #home, #campfire {
+    #cover, #campfire {
         min-height: 750px;
     }    
-    #home {
+    #cover {
         background: url('images/backgrounds/theband/10848916_330927203777248_5507607099657318282_o970@2x.jpg');
     }
     // #media {
@@ -129,7 +129,7 @@
         background: url('images/backgrounds/theband/12771610_505327723003861_6557875998358551396_o970@2x.jpg');
     }
 }
-#home, #campfire {
+#cover, #campfire {
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -161,7 +161,7 @@
 // }
 // @media only screen and (min-width: 539px) {
 //     /* Large screen, non-retina */
-//     #home, #media, #campfire {
+//     #cover, #media, #campfire {
 //         box-shadow: 0 0 300px 300px $mk-box inset;
 //     }
 // }

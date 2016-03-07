@@ -4,11 +4,13 @@
 {% assign show_user = false %}
 {% assign show_reposts = false %}
 {% assign show_artwork = false %}
-{% assign color = 996633 %}
+{% assign color = '' %}
 
 {% assign url = 'https://w.soundcloud.com/player/' %}
 
-{% capture url %}{{ url | append:'?url=https%3A//api.soundcloud.com/playlists/' }}{% endcapture %}
+{% capture url %}{{ url | append:'?url=https%3A//api.soundcloud.com/'}}{% endcapture %}
+{% capture url %}{{ url | append:include.format }}{% endcapture %}
+{% capture url %}{{ url | append:'/' }}{% endcapture %}
 {% capture url %}{{ url | append:include.id }}{% endcapture %}
 
 {% capture url %}{{ url | append:'&amp;auto_play=' }}{% endcapture %}
@@ -32,4 +34,4 @@
 {% capture url %}{{ url | append:'&amp;color=' }}{% endcapture %}
 {% capture url %}{{ url | append:color }}{% endcapture %}
 
-<iframe class='embed-responsive-item' src='{{ url }}'></iframe>
+<iframe src='{{ url }}'></iframe>

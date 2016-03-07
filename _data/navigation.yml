@@ -1,11 +1,12 @@
+# - title: Home
+#   path:  '#cover'
+#   type:  hidden
+  
 - title: The Band
   path:  "#the-band"
 
 - title: Gigs
   path:  "#gigs"
-  
-# - title: Sounds
-#   path:  "#sounds"
 
 - title: Media
   path:  "#media"
@@ -21,6 +22,3 @@
 
 - title: Reviews
   path:  "#reviews"
-
-#- title: Merchandise
-#  path:  "#merchandise"

@@ -1,5 +1,12 @@
 $picture-height: 240px;
+$band-pic-height: 100px;
 
+#the-band {
+  .seamless {
+    margin: 1px;
+    padding: 1px;
+  }
+}  
 .picture {
   h1, h2, h3 {
     font-size: 1em;
@@ -22,6 +29,9 @@ $picture-height: 240px;
 }
 
 .band-member {
+  margin: 0;
+  padding: 0;
+  
   h1, h2, h3 {
     margin-top: 0px;
   }
@@ -35,6 +45,15 @@ $picture-height: 240px;
     margin-top: -12px;
     text-transform: lowercase;
     text-align: center;
+  }
+  a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 21%;
+  }
+  img {
+    
   }
 }
 

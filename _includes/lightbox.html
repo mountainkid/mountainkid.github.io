@@ -1,0 +1,7 @@
+{% if include.full_image %}
+  <a href='{{ include.full_image }}' title='{{ include.title }}' class='{{ include.class }}' data-gallery=''>
+{% endif %}
+    <img src='{{ include.thumbnail }}' alt='{{ include.title }}'/>
+{% if include.full_image %}
+  </a>
+{% endif %}

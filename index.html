@@ -9,11 +9,10 @@ trim_class: sticky
 with_nav: true
 ---
 
-<div id="home">
+<div id="cover">
   <div class="container">
     <div class="container inner-wrapper">
-      {% include straplines.html %}
-      {% include call-to-action.html %}
+      {% include cover.html %}
     </div>
   </div>
 </div>
@@ -22,9 +21,12 @@ with_nav: true
   <div class="container">
     <div class="container inner-wrapper">
       <h1 class='main-title'>The Band</h1>
-        <link rel='stylesheet' href='/assets/css/blueimp-gallery.min.css' type='text/css'/>
-        <link rel='stylesheet' href='/assets/css/bootstrap-image-gallery.min.css' type='text/css'/>
+      <link rel='stylesheet' href='/assets/css/blueimp-gallery.min.css' type='text/css'/>
+      <link rel='stylesheet' href='/assets/css/bootstrap-image-gallery.min.css' type='text/css'/>
+      {% include blueimp-gallery-wrapper.html %}
+      {% include biography.html %}
       {% include the-band.html %}
+      {% include pictures.html %}
     </div>
   </div>
 </div>

@@ -1,4 +1,12 @@
 ---
+- title: Kallipolis
+  id: 174252073
+  url: https://soundcloud.com/mountain-kid/kallipolis
+  image: 
+  #locationIslington Academy
+  date: '2015-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
 - title: The Realist &alpha;
   id: 197898873
   url: https://soundcloud.com/mountain-kid/sets/the-realist-alpha
@@ -105,13 +113,5 @@
   image: 
   #locationRooz Studios
   date: '2016-02-19'
-  #license: Attribution-NonCommercial-ShareAlike
-  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-- title: Kallipolis
-  id: 174252073
-  url: https://soundcloud.com/mountain-kid/kallipolis
-  image: 
-  #locationIslington Academy
-  date: '2015-02-19'
   #license: Attribution-NonCommercial-ShareAlike
   #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/

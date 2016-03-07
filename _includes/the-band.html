@@ -1,71 +1,30 @@
-<!------------>
-<!--The Band-->
-<!------------>
 <a name="the-band"></a>
-<div class="container-fluid">
-<div id="blueimp-gallery" class="blueimp-gallery">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body next"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left prev">
-                        Previous
-                    </button>
-                    <button type="button" class="btn btn-primary next">
-                        Next
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class='row'>
+  <div class='col-md-12'>
+    <dl class='text-center small'>
+    {% for member in site.data.band %}
+      {% capture name %}{{ member.name }}{% endcapture %}
+      {% capture instrument %}{{ member.instrument }}{% endcapture %}
+      <dt>{{ name }}</dt>
+      <dd>{{ instrument }}</dd>
+    {% endfor %}
+    </dl>
+  </div>
 </div>
-</div>
-
 <div id="links">
-
   <div class='row'>
-      
-      <div class='col-md-2 col-sm-2 hidden-xs'></div>
-    {% for member in site.data.band limit:2 %}
+    <div class='col-md-2 col-sm-2 hidden-xs'></div>
+    <div class='col-md-8 col-sm-8 col-xs-12 text-center'>
+      <div class='band-member'>
+    {% for member in site.data.band %}
 
       {% capture thumbnail %}/assets/images/the-band/thumbnails/{{ member.image }}{% endcapture %}
       {% capture full_image %}/assets/images/the-band/{{ member.image }}{% endcapture %}
-      {% include picture.html cols = 4 class = 'band-member' thumbnail = thumbnail full_image = full_image title = member.name instrument = member.instrument license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
-
+      {% include picture.html cols = 2 class = 'band-member' title = member.name thumbnail = thumbnail full_image = full_image index = forloop.rindex0 %}
+      {% cycle '', "<br />" %}
     {% endfor %}
-    
-      <div class='col-md-2 col-sm-2 hidden-xs'></div>
-      
+      </div>
+    </div>
+    <div class='col-md-2 col-sm-2 hidden-xs'></div> 
   </div>
-  <div class='row'>
-      
-      <div class='col-md-2 col-sm-2 hidden-xs'></div>
-    {% for member in site.data.band limit:2 offset:2 %}
-
-      {% capture thumbnail %}/assets/images/the-band/thumbnails/{{ member.image }}{% endcapture %}
-      {% capture full_image %}/assets/images/the-band/{{ member.image }}{% endcapture %}
-      {% include picture.html cols = 4 class = 'band-member' thumbnail = thumbnail full_image = full_image title = member.name instrument = member.instrument license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
-
-    {% endfor %}
-    
-      <div class='col-md-2 col-sm-2 hidden-xs'></div>
-      
-  </div>
-  
-</div>
 </div>

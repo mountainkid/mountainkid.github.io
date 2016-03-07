@@ -1,53 +1,14 @@
-<div class='col-md-{{ include.width }}'>
-  <div class='thumbnail soundcloud center-block'>
-    <div class='embed-responsive embed-responsive-4by3'>
-      {% include sound.html id = include.id %}
-    </div>
-    <dl class='caption dl-horizontal'>
-      <dt>
-        Album ::
-      </dt>
-      <dd>
-        {{ include.title }}
-      </dd>
-      <dt>
-        Tracks ::
-      </dt>
-      <dd>
-        {% for track in include.tracks %}
-          {% capture track_index %}{{ forloop.index }}{% endcapture %}
-          {% capture track_title %}{{ track.title }}{% endcapture %}
-          {{ track_index }} :: {{ track.title }}<br />
-        {% endfor %}
-      </dd>
-      <dt>
-        Recorded at:
-      </dt>
-      <dd>
-        {{ include.location }}
-      </dd>
-      <dt>
-        Engineered by:
-      </dt>
-      <dd>
-        {% if include.engineer %}
-          {{ include.engineer }}
-        {% else %}
-          Gary Long 
-        {% endif %}
-      </dd>
-      <dt>
-        Date:
-      </dt>
-      <dd>
-        {{ include.date | date_to_long_string }}
-      </dd>
-      <dt>
-        License:
-      </dt>
-      <dd>
-        <a href='{{ include.license_url}}'>{{ site.data.licenses[include.license].short-name }}</a>
-      </dd>
-    </dl>
+{% if include.format == 'tracks' %}
+<div class='col-md-{{ include.width }} col-sm-{{ include.width }}'>
+  <div class='thumbnail soundcloud pull-right'>
+      {% include sound.html id = include.id format = include.format %}
   </div>
 </div>
+{% endif %}
+{% if include.format == 'playlists' %}
+<div class='col-md-{{ include.width }} col-sm-{{ include.width }}'>
+  <div class='thumbnail soundcloud'>
+      {% include sound.html id = include.id format = include.format %}
+  </div>
+</div>
+{% endif %}
