@@ -1,30 +1,11 @@
 <a name="the-band"></a>
-<div class='row'>
-  <div class='col-md-12'>
-    <dl class='text-center small'>
+<section class='the-band'>
+  <dl class='text-center'>
     {% for member in site.data.band %}
       {% capture name %}{{ member.name }}{% endcapture %}
       {% capture instrument %}{{ member.instrument }}{% endcapture %}
       <dt>{{ name }}</dt>
       <dd>{{ instrument }}</dd>
     {% endfor %}
-    </dl>
-  </div>
-</div>
-<div id="links">
-  <div class='row'>
-    <div class='col-md-2 col-sm-2 hidden-xs'></div>
-    <div class='col-md-8 col-sm-8 col-xs-12 text-center'>
-      <div class='band-member'>
-    {% for member in site.data.band %}
-
-      {% capture thumbnail %}/assets/images/the-band/thumbnails/{{ member.image }}{% endcapture %}
-      {% capture full_image %}/assets/images/the-band/{{ member.image }}{% endcapture %}
-      {% include picture.html cols = 2 class = 'band-member' title = member.name thumbnail = thumbnail full_image = full_image index = forloop.rindex0 %}
-      {% cycle '', "<br />" %}
-    {% endfor %}
-      </div>
-    </div>
-    <div class='col-md-2 col-sm-2 hidden-xs'></div> 
-  </div>
-</div>
+  </dl>
+</section>

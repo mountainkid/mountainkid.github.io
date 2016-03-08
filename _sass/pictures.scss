@@ -50,7 +50,7 @@ $band-pic-height: 100px;
     display: inline-block;
     margin: 0;
     padding: 0;
-    width: 21%;
+    max-width: 100px;
   }
   img {
     
@@ -59,4 +59,8 @@ $band-pic-height: 100px;
 
 .thumbnail {
   border: none;
+}
+
+.lightbox img {
+  max-width: 100px;
 }
