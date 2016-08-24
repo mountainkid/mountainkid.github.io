@@ -1,0 +1,15 @@
+- title: Twitter
+  url: 'https://twitter.com/mountainkidband'
+  fontawesome: fa-twitter
+- title: Facebook
+  url: 'https://facebook.com/noahsarkitech'
+  fontawesome: fa-facebook-official
+- title: Soundcloud
+  url: 'https://soundcloud.com/mountain-kid'
+  fontawesome: fa-soundcloud
+- title: Instagram
+  url: 'https://instagram.com/mountainkidmusic'
+  fontawesome: fa-instagram
+- title: Spotify
+  url: 'https://open.spotify.com/artist/6EVJczhQW7aCY8DwslSU29'
+  fontawesome: fa-spotify

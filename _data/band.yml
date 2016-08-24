@@ -1,0 +1,29 @@
+- name:          'Addison White'
+  image:         addison.jpg
+  instrument:    'Vocals/Guitar'
+  image_caption: 'Addison White'
+  #photographer:  jane
+  #license:       Attribution-NonCommercial
+  #license_url:   https://creativecommons.org/licenses/by-nc/2.0/  
+- name:          'Lewis Wall'
+  image:         lewis.jpg
+  instrument:    'Lead Guitar/Vocals'
+  image_caption: 'Lewis Wall'
+  #photographer:  jane
+  #license:       Attribution-NonCommercial
+  #license_url:   https://creativecommons.org/licenses/by-nc/2.0/  
+- name:          'Rob Hine'
+  image:         rob.jpg
+  instrument:    'Bass Gentleman'
+  image_caption: 'Rob Hine'
+  #photographer:  Rob Hine
+  #twitter:       pikesley
+  #license:       Attribution-NonCommercial
+  #license_url:   https://creativecommons.org/licenses/by-nc/2.0/
+- name:          'Ethan Stone'
+  image:         ethan.jpg
+  instrument:    'Drum & Drummer'
+  image_caption: 'Ethan Stone'
+  #photographer:  jane
+  #license:       Attribution-NonCommercial
+  #license_url:   https://creativecommons.org/licenses/by-nc/2.0/

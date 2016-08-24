@@ -1,0 +1,18 @@
+#reviews {
+	
+}
+
+.review {
+  position: relative;
+  display: block;
+  width:  90%;
+  margin: 0 auto;
+  dt {
+    font-size: 1.5em;
+  }
+
+  dd {
+    font-size: 1.0em;
+    text-align: right;
+  }
+}

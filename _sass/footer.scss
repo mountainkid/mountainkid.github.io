@@ -1,0 +1,19 @@
+$footer-height: .5rem;
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-transform: lowercase;
+  text-align: center;
+  padding-top: 1rem;
+  background-color: rgba(42,56,28,.5);
+  opacity: 1;
+  color: white;
+  a {
+    color: #eee;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}

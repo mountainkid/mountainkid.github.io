@@ -1,0 +1,11 @@
+<a name="the-band"></a>
+<article class='the-band'>
+  <dl class='text-center'>
+    {% for member in site.data.band %}
+      {% capture name %}{{ member.name }}{% endcapture %}
+      {% capture instrument %}{{ member.instrument }}{% endcapture %}
+      <dt>{{ name }}</dt>
+      <dd>{{ instrument }}</dd>
+    {% endfor %}
+  </dl>
+</article>

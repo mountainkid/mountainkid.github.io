@@ -1,0 +1,24 @@
+# - title: Home
+#   path:  '#cover'
+#   type:  hidden
+  
+- title: The Band
+  path:  "#the-band"
+
+- title: Gigs
+  path:  "#gigs"
+
+- title: Media
+  path:  "#media"
+  type: dropdown
+  sections:
+    - title: Sounds
+      path: '#sounds'
+    # - title: Videos
+    #   path: '#videos'
+
+- title: Bookings
+  path:  "#book-the-band"
+
+- title: Reviews
+  path:  "#reviews"

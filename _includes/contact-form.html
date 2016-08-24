@@ -1,0 +1,19 @@
+<h3 class="text-center">Quick Contact Form</h3>
+    <form action="//formspree.io/{{ site.email }}" method="POST">
+        <div class="row">
+            <div class="six columns">
+                <input class="u-full-width" type="text" name="name" placeholder="Full Name" />
+            </div>
+            <div class="six columns">
+                <input class="u-full-width" type="email" name="_replyto" placeholder="Your Email" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <textarea class="u-full-width" rows="5" name="message" placeholder="Type your message..."></textarea>
+            </div>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="//mountainkid.net" />
+            <button class="btn btn-default send" type="submit"><span class="glyphicons glyphicons-send" aria-hidden="true"></span> send</button>
+        </div>
+    </form>

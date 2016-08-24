@@ -1,0 +1,72 @@
+$picture-height: 240px;
+$band-pic-height: 100px;
+
+.media-section {
+  border-radius: 15px;
+  background-color: rgba(17,17,17,.5);
+  margin-top: 2rem;
+}
+
+#the-band {
+  .seamless {
+    margin: 1px;
+    padding: 1px;
+  }
+}  
+.picture {
+  h1, h2, h3 {
+    font-size: 1em;
+    margin-top: 0px;
+  }
+
+  h2, h3 {
+    font-size: 0.7em;
+  }
+
+  img {
+    max-height: $picture-height;
+  }
+}
+
+.caption {
+  h1, h2 {
+    color: #a0a0a0;
+  }
+}
+
+.band-member {
+  margin: 0;
+  padding: 0;
+  
+  h1, h2, h3 {
+    margin-top: 0px;
+  }
+
+  h2, h3 {
+    font-size: 0.7em;
+  }
+
+  .twitter {
+    font-size: 1em;
+    margin-top: -12px;
+    text-transform: lowercase;
+    text-align: center;
+  }
+  a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+  }
+  img {
+    
+  }
+}
+
+.thumbnail {
+  border: none;
+}
+
+.lightbox img {
+  max-width: 100px;
+}

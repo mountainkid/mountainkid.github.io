@@ -1,112 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="title" content="Mountain Kid">
-    <link rel="canonical" href="https://mountainkid.net/index.html" />
-    <link rel="icon" href="assets/favicon.ico">
+---
+layout: default
+---
 
-    <title>Mountain Kid</title>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    
-    <!--Font Awesome icons-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-74902023-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-    
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand"><a href="#"><img class="img-responsive brand center-block" alt="MOUNTAIN KID" src="assets/images/logo.png"></a><br /><small>The Realist: &alpha;<br />&amp;<br />The Realist: &Omega;<br />in <a href="https://mountainkid.bandcamp.com" target="_blank">stores</a> now!!</small></h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li><a href="https://soundcloud.com/mountain-kid" target="_blank"><i class="fa fa-soundcloud"></i></i> Listen on SoundCloud</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Under Construction</h1>
-            <p class="lead">Sign up to be notified when the site is complete ::</p>
-            <form action="//formspree.io/mountainkidmusic@gmail.com" method="POST" class="form-inline">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" />
-              </div>
-              <div class="form-group">
-                <input type="email" name="_replyto" class="form-control" placeholder="Email Address" />
-              </div>
-                <input type="text" name="_gotcha" style="display:none" />
-                <input type="hidden" name="_next" value="//mountainkid.net/thanks.html" />
-              <div class="form-group">
-                <button type="submit" class="btn btn-default"><i class="fa fa-envelope"></i></button>
-              </div>
-            </form>
-            <br />
-            <p class="lead">Or find us on social media ::</p>
-            <ul class="list-unstyled list-inline center-block">
-              <li><a href="https://www.twitter.com/mountainkidband/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-              <li><a href="https://www.facebook.com/noahsarkitech/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a></li>
-              <li><a href="https://www.instagram.com/mountainkidmusic/" target="_blank"><i class="fa fa-instagram fa-2x"></i></i></a></li>
-            </ul>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Website being built at <a href="https://github.com/mountainkid/mountainkid.github.io" target="_blank">GitHub</a>, by <a href="https://github.com/jaronth" target="_blank">jaronth</a>.</p>
-            </div>
-          </div>
-
+  <div class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h4 class="hero-heading">The Realist <span class="alpha">&alpha;</span> &amp; The Realist <span class="omega">&Omega;</span><br />in stores now</h4>
+          <a href="#sounds" class="button button-primary page-scroll">Listen Now</a>
         </div>
-
+        <div class="one-half column phones">
+          <img class="phone" src="{{ site.baseurl }}/images/logo-dark.png">
+          <img class="phone u-full-width" src="{{ site.baseurl }}/images/mk_t_shirt.png">
+        </div>
       </div>
+    </div>
+  </div>
 
+  <div id="gigs" class="section">
+    <div class="container">
+      <div class="row">
+        <h1 class='section-heading'>Gigs</h1>
+      </div>
+      {% include gigs.html %}
+      <div class='row'>
+        {% include book-us.html %}
+      </div>
+    </div>
+  </div>
+
+  <div id="media" class="section">
+    <div class="container">
+      <h3 class="section-heading">Media</h3>
+      <div class="media-section">
+      <h5 class="section-description">biography</h5>
+        {% include biography.html %}
+        {% include the-band.html %}
+      </div>
+      <div class="media-section">
+      <h5 class="section-description">pictures</h5>
+      <div id="pictures">
+        {% include blueimp-gallery-widget.html %}
+        {% include pictures.html %}
+        {% include blueimp-gallery-init.html %}
+      </div>
+      </div>
+      <div class="media-section">
+      <h5 class="section-description">sounds</h5>
+      <div id="sounds">
+        {% include sounds.html %}
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="shop" class="section reviews">
+    <div class="container">
+      <h3 class="section-heading">Merch</h3>
+      <p class="section-description">Pick up some Mountain Kid merch at one of our friendly retailers.</p>
+      <div class="row">
+        <div class="one-half column item-block">
+          <h5>T-Shirts</h5>
+          <img class="u-max-full-width merch" src="{{ site.baseurl }}/images/mk_t_shirt.jpg">
+          <p>Availability :: Come to a <a href="#gigs" class="page-scroll">LIVE SHOW</a> !!</p>
+        </div>
+        <div class="one-half column item-block">
+          <h5>Discography</h5>
+          <img class="merch" src="{{ site.baseurl }}/images/sounds/kallipolis.jpg">
+          <img class="merch" src="{{ site.baseurl }}/images/sounds/alpha.jpg">
+          <img class="merch" src="{{ site.baseurl }}/images/sounds/omega.jpg">
+          <p>CDs and Downloads available at retailers everywhere</p>
+        </div>
+      </div>
+      <hr />
+      <h3 class="section-heading">Reviews</h3>
+        {% include reviews.html %}
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+  <div id="book-the-band" class="container section">
+    <div class="row">
+      <div class="twelve columns">
+        <h1 class='main-title'>Contact Us</h1>
+        {% include book-the-band.html %}
+      </div>
+    </div>
+  </div>

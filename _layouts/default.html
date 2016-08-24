@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+<body>
+
+	<div class="container-full">
+	
+    	<!-- Primary Page Start
+    	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	
+    	<!-- Primary Navigation
+    	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	
+    	
+
+    	{% include header.html %}
+	
+    	<div class="page-content">
+	
+			{% include navigation.html %}
+
+	      	<div class="wrapper"> 
+	        	{{ content }}
+	      	</div>
+	
+    		{% include footer.html %}
+	
+    	</div>
+
+	</div>
+
+<!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript">
+  var nav = responsiveNav(".nav-collapse", {customToggle: "mobile-nav"});
+</script>
+<script type="text/javascript" src='{{ site.baseurl }}/js/blueimp-gallery.min.js'></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

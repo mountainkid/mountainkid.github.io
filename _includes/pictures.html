@@ -1,0 +1,14 @@
+<a name="pictures"></a>
+<div id="links">
+      {% for member in site.data.band %}
+
+      {% capture thumbnail %}/images/the-band/thumbnails/{{ member.image }}{% endcapture %}
+      {% capture full_image %}/images/the-band/{{ member.image }}{% endcapture %}
+      {% include lightbox.html cols = 4 class = 'lightbox' title = member.name thumbnail = thumbnail full_image = full_image %}
+    {% endfor %}
+    {% for picture in site.data.pics %}
+      {% include lightbox.html cols = 4 class = 'lightbox' thumbnail = picture.thumbnail title = picture.title full_image = picture.full_image %}
+    {% endfor %}
+</div>
+
+

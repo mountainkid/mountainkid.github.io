@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+[{
+  "@context" : "http://schema.org",
+  "@type" : "MusicEvent",
+  "name" : "Mountain Kid live at {{ include.title }}",
+  "startDate" : "{{ include.date | date: '%F' }}T{{ include.time }}",
+  "location" : {
+    "@type" : "Place",
+    "name" : "{{ include.location }}",
+    "address" : "{{ include.address }}"
+  },
+  "performer" : [{
+    "@type" : "MusicGroup",
+    "name" : "Mountain Kid",
+    "sameAs" : "https://mountainkid.net/"
+  }]
+}]
+</script>

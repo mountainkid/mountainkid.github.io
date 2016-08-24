@@ -1,0 +1,18 @@
+#book-the-band {
+    color: #eee;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    color: #eee;
+    background-color: transparent;
+}
+
+button.send {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}

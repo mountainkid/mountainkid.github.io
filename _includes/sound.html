@@ -1,0 +1,41 @@
+{% assign auto_play = false %}
+{% assign hide_related = true %}
+{% assign show_comments = false %}
+{% assign show_user = false %}
+{% assign show_reposts = false %}
+{% assign show_artwork = true %}
+{% assign color = '' %}
+{% assign theme_color = 555555 %}
+
+{% assign url = 'https://w.soundcloud.com/player/' %}
+
+{% capture url %}{{ url | append:'?url=https%3A//api.soundcloud.com/'}}{% endcapture %}
+{% capture url %}{{ url | append:include.format }}{% endcapture %}
+{% capture url %}{{ url | append:'/' }}{% endcapture %}
+{% capture url %}{{ url | append:include.id }}{% endcapture %}
+
+{% capture url %}{{ url | append:'&amp;auto_play=' }}{% endcapture %}
+{% capture url %}{{ url | append:auto_play }}{% endcapture %}
+
+{% capture url %}{{ url | append:'&amp;hide_related=' }}{% endcapture %}
+{% capture url %}{{ url | append:hide_related }}{% endcapture %}
+
+{% capture url %}{{ url | append:'&amp;show_comments=' }}{% endcapture %}
+{% capture url %}{{ url | append:show_comments }}{% endcapture %}
+
+{% capture url %}{{ url | append:'&amp;show_user=' }}{% endcapture %}
+{% capture url %}{{ url | append:show_user }}{% endcapture %}
+
+{% capture url %}{{ url | append:'&amp;show_reposts=' }}{% endcapture %}
+{% capture url %}{{ url | append:show_reposts }}{% endcapture %}
+
+{% capture url %}{{ url | append:'&amp;show_artwork=' }}{% endcapture %}
+{% capture url %}{{ url | append:show_artwork }}{% endcapture %}
+
+{% capture url %}{{ url | append:'&amp;theme_color=' }}{% endcapture %}
+{% capture url %}{{ url | append:theme_color }}{% endcapture %}
+
+{% capture url %}{{ url | append:'&amp;color=' }}{% endcapture %}
+{% capture url %}{{ url | append:color }}{% endcapture %}
+
+<iframe id="soundcloud_widget" src='{{ url }}'></iframe>

@@ -1,0 +1,14 @@
+{% if include.format == 'tracks' %}
+<div class='{{ include.width }} columns }}'>
+  <div class='thumbnail soundcloud pull-right'>
+      {% include sound.html id = include.id format = include.format %}
+  </div>
+</div>
+{% endif %}
+{% if include.format == 'playlists' %}
+<div class='col-md-{{ include.width }} col-sm-{{ include.width }}'>
+  <div class='thumbnail soundcloud'>
+      {% include sound.html id = include.id format = include.format %}
+  </div>
+</div>
+{% endif %}

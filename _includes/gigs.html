@@ -1,0 +1,45 @@
+<a name="gigs"></a>
+{% assign upcoming_gigs = '' %}
+{% capture nowseconds %}
+  {{ 'now' | date: '%s' }}
+{% endcapture %}
+
+<div class='giglist row'>
+
+      <div class="one-half column">
+
+        <h2 class='heading'>Upcoming</h2>
+        <dl class='future-gigs dl-horizontal text-center'>
+
+          {% for post in site.categories.gigs reversed %}
+            {% capture datetime %}{{ post.day | date: '%Y-%m-%d' }}T{{ post.hour }}{% endcapture %}
+            {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
+            {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
+            {% if future < '0' %}
+              {% capture upcoming_gigs %}{{ 'true' }}{% endcapture %}
+              {% include gig.html hour = post.hour day = post.day url = post.url title = post.title with_day = true %}
+            {% endif %}
+          {% endfor %}
+        </dl>
+        {% if upcoming_gigs != 'true' %}
+          <p>Nothing in the calendar. Why not <a href='#book-the-band' class='page-scroll'>book us?</a></p>
+        {% endif %}
+      </div>
+      <div class="one-half column">
+
+
+          <h2 class='heading'>Archive</h2>
+          <dl class='past-gigs dl-horizontal text-center'>
+
+            {% for post in site.categories.gigs %}
+              {% capture datetime %}{{ post.day | date: '%Y-%m-%d' }}T{{ post.hour }}{% endcapture %}
+              {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
+              {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
+              {% if future > '0' %}
+                {% include gig.html hour = post.hour day = post.day url = post.url title = post.title with_year = true %}
+              {% endif %}
+            {% endfor %}
+
+          </dl>
+      </div>
+</div>

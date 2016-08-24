@@ -1,0 +1,23 @@
+<a name="sounds"></a>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+<script>
+  SC.initialize({
+    client_id: '86b258e3d9970e71e899307bad7f7c09'
+  });
+</script>
+
+<div class='row'>
+
+  {% for sound in site.data.soundcloud limit:1 offset:5 %}
+    {% include sound-cell.html id = sound.id title = sound.title format = 'tracks' width = 'twelve' %}
+  {% endfor %}  
+  
+</div>
+
+<div class='row'>
+
+  {% for sound in site.data.soundcloud limit:1 offset:12 %}
+    {% include sound-cell.html id = sound.id title = sound.title format = 'tracks' width = 'twelve' %}
+  {% endfor %}  
+  
+</div>

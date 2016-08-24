@@ -1,0 +1,26 @@
+<div class="row">
+{% for review in site.data.reviews reversed %}
+  <div class="one-half column">
+    <dl class='review'>
+      
+        <dt>
+          '{{ review.quote }}'
+        </dt>
+        <dd>
+          -- {{ review.source }}
+        </dd>
+        
+    </dl>
+  </div>
+{% endfor %}
+</div>
+
+<hr />
+
+<section class='call-for-feedback'>
+  <p>
+    Please send us your feedback on <a href='https://twitter.com/{{ site.twitter_username }}' target="_blank">Twitter</a>, <a href='https://facebook.com/{{ site.facebook_username }}' target="_blank">Facebook</a>.
+  </p>
+</section>
+
+<hr />

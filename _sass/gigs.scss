@@ -1,0 +1,70 @@
+#gigs .container{
+  background-color: #eee;
+  border-radius: 15px;
+}
+
+#gig-layout {
+  padding-top: 100px;
+}
+
+.map {
+  height: 300px;
+}
+
+.olControlAttribution {
+  right: 5px;
+  top: 280px;
+  color: $mk-alpha;
+  font-weight: bold;
+  a {
+    color: $mk-dark;
+  }
+}
+
+.giglist {
+  padding-bottom: $padding-large-vertical;
+
+  .past-gigs {
+    font-size: 1.2em;
+  }
+
+  .future-gigs {
+    font-size: 1.3em;
+  }
+}
+
+.gig {
+  font-size: 1.1em;
+
+  dt {
+    color: $mk-alpha;
+  }
+
+  dd {
+    padding-bottom: $padding-large-vertical;
+  }
+}
+
+
+.next-gig {
+  position:absolute;
+  bottom:70px;
+  right:1%;
+  font-size: 1em;
+  background-color: $mk-omega;
+  color: $mk-alpha;
+  opacity: 0.7;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    background-color: $mk-alpha;
+    color: $mk-omega;
+    text-decoration: none;
+  }
+}

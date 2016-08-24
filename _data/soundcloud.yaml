@@ -1,0 +1,117 @@
+---
+- title: Kallipolis
+  id: 174252073
+  url: https://soundcloud.com/mountain-kid/kallipolis
+  image: 
+  #locationIslington Academy
+  date: '2015-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: The Realist &alpha;
+  id: 197898873
+  url: https://soundcloud.com/mountain-kid/sets/the-realist-alpha
+  image: alpha.jpg
+  tracks:
+    - title: Monotony
+    - title: Feet First
+    - title: Darkness on the Run
+    - title: Stop
+    - title: Amnesiawake
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: The Realist &Omega;
+  id: 197906998
+  url: https://soundcloud.com/mountain-kid/sets/the-realist-omega
+  image: omega.jpg
+  tracks:
+    - title: Spectacle
+    - title: The Tick
+    - title: The Realist
+    - title: Cross This Body
+    - title: No Ghost
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: Monotony
+  id: 247907374
+  url: https://soundcloud.com/mountain-kid/monotony
+  image: 
+  #location
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: Feet First
+  id: 247907370
+  url: https://soundcloud.com/mountain-kid/feet-first
+  image: 
+  #locationRogue Studios
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: Darkness On The Run
+  id: 247907366
+  url: https://soundcloud.com/mountain-kid/darkness-on-the-run
+  image: 
+  #locationIslington Academy
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: Stop
+  id: 247907359
+  url: https://soundcloud.com/mountain-kid/stop
+  image: 
+  #locationIslington Academy
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: Amnesiawake
+  id: 247907355
+  url: https://soundcloud.com/mountain-kid/amnesiawake
+  image: 
+  #locationIslington Academy
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: Spectacle
+  id: 247911606
+  url: https://soundcloud.com/mountain-kid/spectacle
+  image: 
+  #location
+  date: '2016-02-19'
+  #license: 
+  #license_url: 
+- title: The Tick
+  id: 247911532
+  url: https://soundcloud.com/mountain-kid/the-tick
+  image: 
+  #locationRogue Studios
+  #engineer: Alessio
+  date: '2016-02-19'
+  #: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: The Realist
+  id: 247911526
+  url: https://soundcloud.com/mountain-kid/the-realist
+  image: 
+  #locationRogue Studios
+  #engineer: Alessio
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: Cross This Body
+  id: 247911520
+  url: https://soundcloud.com/mountain-kid/cross-this-body
+  image: 
+  #location
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: No Ghost
+  id: 247911506
+  url: https://soundcloud.com/mountain-kid/no-ghost
+  image: 
+  #locationRooz Studios
+  date: '2016-02-19'
+  #license: Attribution-NonCommercial-ShareAlike
+  #license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
