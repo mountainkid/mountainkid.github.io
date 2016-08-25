@@ -1,17 +1,12 @@
 $picture-height: 240px;
 $band-pic-height: 100px;
 
-.media-section {
+#tabs {
   border-radius: 15px;
-  background-color: rgba(17,17,17,.5);
-  margin-top: 2rem;
 }
 
-#the-band {
-  .seamless {
-    margin: 1px;
-    padding: 1px;
-  }
+.the-band {
+  text-align: center;
 }  
 .picture {
   h1, h2, h3 {

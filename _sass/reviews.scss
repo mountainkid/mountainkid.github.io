@@ -1,7 +1,15 @@
-#reviews {
-	
+#shop .container {
+	border-radius: 15px;
+  background-color: #eee;
 }
-
+.item-block {
+  margin: 1rem;
+  a {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
 .review {
   position: relative;
   display: block;

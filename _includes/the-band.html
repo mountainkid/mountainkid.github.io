@@ -1,11 +1,15 @@
 <a name="the-band"></a>
-<article class='the-band'>
-  <dl class='text-center'>
+<div class='the-band'>
+  <div class="row">
     {% for member in site.data.band %}
+      {% capture thumbnail %}/images/the-band/thumbnails/{{ member.image }}{% endcapture %}
       {% capture name %}{{ member.name }}{% endcapture %}
       {% capture instrument %}{{ member.instrument }}{% endcapture %}
-      <dt>{{ name }}</dt>
-      <dd>{{ instrument }}</dd>
+      <div class="three columns">
+      	{{ name }}<br />
+      	{{ instrument }}<hr />
+      	<img src="{{ site.baseurl }}{{ thumbnail }}" class="u-full-width" alt="{{ name }}" />
+  	  </div>
     {% endfor %}
-  </dl>
-</article>
+  </div>
+</div>

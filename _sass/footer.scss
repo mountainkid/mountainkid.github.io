@@ -4,14 +4,15 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 30px;
   text-transform: lowercase;
   text-align: center;
-  padding-top: 1rem;
   background-color: rgba(42,56,28,.5);
   opacity: 1;
   color: white;
   a {
     color: #eee;
+    padding: 0 1.5rem;
   }
   a:hover {
     text-decoration: none;

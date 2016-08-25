@@ -5,16 +5,31 @@ layout: default
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="section hero">
+  <div class="section hero jumbotron">
     <div class="container">
       <div class="row">
-        <div class="one-half column">
+        <div class="one-half column hidden-md">
           <h4 class="hero-heading">The Realist <span class="alpha">&alpha;</span> &amp; The Realist <span class="omega">&Omega;</span><br />in stores now</h4>
-          <a href="#sounds" class="button button-primary page-scroll">Listen Now</a>
+          <a href="https://geo.itunes.apple.com/us/artist/mountain-kid/id936746923?app=itunes" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg) no-repeat;width:165px;height:40px;"></a>
         </div>
         <div class="one-half column phones">
-          <img class="phone" src="{{ site.baseurl }}/images/logo-dark.png">
-          <img class="phone u-full-width" src="{{ site.baseurl }}/images/mk_t_shirt.png">
+          <!-- <img class="phone" src="{{ site.baseurl }}/images/logo-dark.png"> -->
+          <!-- <img class="phone u-full-width" src="{{ site.baseurl }}/images/logo-dark.png"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero visible-md">
+    <div class="container">
+      <div class="row">
+        <div class="full column">
+          <h4 class="hero-heading">The Realist <span class="alpha">&alpha;</span> &amp; The Realist <span class="omega">&Omega;</span> in stores now</h4>
+          <a href="https://geo.itunes.apple.com/us/artist/mountain-kid/id936746923?app=itunes" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg) no-repeat;width:165px;height:40px;"></a>
+        </div>
+        <div class="one-half column phones">
+          <!-- <img class="phone" src="{{ site.baseurl }}/images/logo-dark.png"> -->
+          <!-- <img class="phone u-full-width" src="{{ site.baseurl }}/images/logo-dark.png"> -->
         </div>
       </div>
     </div>
@@ -33,14 +48,19 @@ layout: default
   </div>
 
   <div id="media" class="section">
-    <div class="container">
-      <h3 class="section-heading">Media</h3>
-      <div class="media-section">
+    <div id="tabs" class="container">
+      <h1 class="section-heading">Media</h1>
+      <ul>
+        <li><a href="#tabs-1">biography</a></li>
+        <li><a href="#tabs-2">pictures</a></li>
+        <li><a href="#tabs-3">sounds</a></li>
+      </ul>
+      <div id="tabs-1" class="media-section">
       <h5 class="section-description">biography</h5>
         {% include biography.html %}
         {% include the-band.html %}
       </div>
-      <div class="media-section">
+      <div id="tabs-2" class="media-section">
       <h5 class="section-description">pictures</h5>
       <div id="pictures">
         {% include blueimp-gallery-widget.html %}
@@ -48,7 +68,7 @@ layout: default
         {% include blueimp-gallery-init.html %}
       </div>
       </div>
-      <div class="media-section">
+      <div id="tabs-3" class="media-section">
       <h5 class="section-description">sounds</h5>
       <div id="sounds">
         {% include sounds.html %}
@@ -57,28 +77,44 @@ layout: default
     </div>
   </div>
 
-  <div id="shop" class="section reviews">
+  <div id="shop" class="section">
     <div class="container">
-      <h3 class="section-heading">Merch</h3>
-      <p class="section-description">Pick up some Mountain Kid merch at one of our friendly retailers.</p>
+      <h1 class="section-heading">Merch</h1>
       <div class="row">
-        <div class="one-half column item-block">
-          <h5>T-Shirts</h5>
-          <img class="u-max-full-width merch" src="{{ site.baseurl }}/images/mk_t_shirt.jpg">
-          <p>Availability :: Come to a <a href="#gigs" class="page-scroll">LIVE SHOW</a> !!</p>
+        <div class="one-half column">
+          <div class="item-block">
+            <h5>T-Shirt</h5>
+            <img class="u-full-width" src="{{ site.baseurl }}/images/mk_t_shirt.jpg">
+            <hr />
+            <p>Availability :: Come to a <a href="#gigs" class="page-scroll">LIVE SHOW</a> !!</p>
+          </div>
         </div>
-        <div class="one-half column item-block">
-          <h5>Discography</h5>
-          <img class="merch" src="{{ site.baseurl }}/images/sounds/kallipolis.jpg">
-          <img class="merch" src="{{ site.baseurl }}/images/sounds/alpha.jpg">
-          <img class="merch" src="{{ site.baseurl }}/images/sounds/omega.jpg">
-          <p>CDs and Downloads available at retailers everywhere</p>
+        <div class="one-half column">
+          <div class="item-block">
+            <h5>Latest e p</h5>
+            <img class="u-full-width merch" src="{{ site.baseurl }}/images/sounds/omega.jpg">
+            <hr />
+            <p>iTunes :: <a href="https://geo.itunes.apple.com/us/album/the-realist-omega-ep/id1090092665?mt=1&app=music">The Realist: Omega - EP - Mountain Kid</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <div class="item-block">
+            <h5>Special deal !!</h5>
+            <img class="deal" src="{{ site.baseurl }}/images/sounds/kallipolis.jpg">
+            <img class="deal" src="{{ site.baseurl }}/images/sounds/alpha.jpg">
+            <img class="deal" src="{{ site.baseurl }}/images/sounds/omega.jpg">
+            <hr />
+            <p>Get all three CDs at <a href="https://mountainkid.bandcamp.com/album/the-realist-omega" target="_blank">BANDCAMP</a> for $8!!</p>
+          </div>
         </div>
       </div>
       <hr />
       <h3 class="section-heading">Reviews</h3>
         {% include reviews.html %}
     </div>
+  </div>
 
   <div id="book-the-band" class="container section">
     <div class="row">

@@ -1,5 +1,8 @@
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+  height: 35px;
+}
 .fixed-top {
   background: rgba(17,17,17,0.5);
   position: fixed;
@@ -15,6 +18,7 @@
 .inline-list li {
   display: table-cell;
   margin: 0 20px 0 0;
+  vertical-align: top;
   padding-right: 30px;
   line-height: 250%;
 }
@@ -36,12 +40,4 @@ nav-list {
 }
 .nav-container a { 
   color: white;
-}
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
 }

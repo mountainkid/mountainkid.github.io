@@ -58,6 +58,9 @@ h2.heading {
 body {
   background-color: #2a381c;
 }
+.wrapper {
+  margin-top: 50px;
+}
 .button {
   border-radius: 100px;
 }
@@ -66,6 +69,12 @@ body {
 }
 .omega {
   color: #0099cc;
+}
+.hidden-md {
+  display: none;
+}
+.hidden-lg {
+  display: none;
 }
 
 /* Sections
@@ -81,6 +90,12 @@ body {
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.jumbotron {
+  background-image: url('../images/mk_t_shirt.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
 .hero-heading {
   color: white;
 }
@@ -91,7 +106,7 @@ body {
 .phone {
   position: relative;
   max-width: 80%;
-  margin: 3rem auto -12rem;
+  margin: 3rem auto -20rem;
 }
 .phone + .phone {
   display: none;
@@ -99,12 +114,6 @@ body {
 
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#media {
-  background-image: url('../images/mountain-bg.gif');
-  background-size: cover;
-  color: #fff;
-  padding-bottom: 5rem;
-}
 .value-multiplier {
   margin-bottom: .5rem;
   color: #11DFC7;
@@ -135,12 +144,11 @@ body {
 
 /* Smaller than 550 */
 @media (max-width: 549px) {
-  .hero {
-    background-image: url('../images/compass.svg');
-    background-size: cover;
-  }
   .hidden-xs {
     display: none;
+  }
+  .jumbotron {
+    background-position: center;
   }
 }
 /* Bigger than 550 */
@@ -166,7 +174,7 @@ body {
     max-width: 73.8%;
     right: 0;
     z-index: 2;
-    max-height: 338px;
+    max-height: vh;
   }
   .hero-heading {
     font-size: 2.4rem;
@@ -202,10 +210,16 @@ body {
   }
   .phone + .phone {
     top: -12rem;
-    max-height: 472px;
+    max-height: vh;
   }
   .categories {
     padding: 15rem 0 8rem;
+  }
+  .hidden-md {
+    display: inline-block;
+  }
+  .visible-md {
+    display: none;
   }
 }
 
@@ -226,6 +240,12 @@ body {
   }
   .phone + .phone {
     top: -14rem;
-    max-height: 570px;
+    max-height: vh;
+  }
+  .hidden-lg {
+    display: inline-block;
+  }
+  .visible-lg {
+    display: none;
   }
 }

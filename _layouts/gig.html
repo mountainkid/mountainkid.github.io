@@ -4,6 +4,13 @@ extra_title: Live at
 gig_og: true
 trim_class: gig
 ---
+<div class="fixed-top">
+<div class="nav-container no-select">
+  <ul class="inline-list hover-links nav-list">
+    <li class="navbar-brand"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.png" style="max-height: 35px;" alt="MOUNTAIN KID"></a></li>
+  </ul>
+</div>
+</div>
 <section id='gig-layout' class="container content-section">
   <div class='row'>
     <h1 class='main-title'>{{ page.title }}</h1>
@@ -47,6 +54,9 @@ trim_class: gig
     </div>
   </article>
 </div>
+<div class='row'>
+      <p><a href="{{ site.baseurl }}/">Back</a></p>
+</div>
 </section>
-{% include json-ld.html title = page.title date = page.date time = page.time location = page.location address = page.address %}
-<style type="text/css">.page-scroll {display: none;}</style>
+{% include json-ld.html title = page.title date = page.day time = page.hour location = page.location address = page.address %}
+<style type="text/css">nav.nav-container{display:none!important;}#mobile-nav{display:none!important;}</style>
